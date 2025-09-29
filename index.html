@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #121212;
+      color: #eee;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #1e1e1e;
+      border-bottom: 1px solid #333;
+    }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { opacity: 0.8; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 3rem; }
+    h2 { border-bottom: 1px solid #333; padding-bottom: 0.3rem; }
+    .work-item, .skill, .link, .contact {
+      background: #1a1a1a;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    .media { margin-top: 0.5rem; }
+    iframe, video, img { max-width: 100%; border-radius: 6px; }
+    ul { padding-left: 1.2rem; }
+    a { color: #4da3ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="name"></h1>
+    <p id="tagline"></p>
+  </header>
+  <main>
+    <section>
+      <h2>About</h2>
+      <div id="bio"></div>
+    </section>
+    <section>
+      <h2>Work</h2>
+      <div id="work"></div>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <ul id="skills"></ul>
+    </section>
+    <section>
+      <h2>Payments</h2>
+      <ul id="payments"></ul>
+    </section>
+    <section>
+      <h2>Links</h2>
+      <ul id="links"></ul>
+    </section>
+    <section>
+      <h2>Contacts</h2>
+      <ul id="contacts"></ul>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("name").textContent = data.name;
+        document.getElementById("tagline").textContent = data.tagline;
+        document.getElementById("bio").innerHTML = marked.parse(data.bio_markdown);
+
+        // Work
+        const workDiv = document.getElementById("work");
+        data.work.forEach(w => {
+          const div = document.createElement("div");
+          div.className = "work-item";
+          div.innerHTML = `
+            <h3>${w.title}</h3>
+            <p><strong>${w.role}</strong> — ${w.date}</p>
+            <div>${marked.parse(w.desc_markdown)}</div>
+          `;
+          w.media?.forEach(m => {
+            const wrap = document.createElement("div");
+            wrap.className = "media";
+            if (m.type === "image") {
+              wrap.innerHTML = `<img src="${m.src}"/>`;
+            } else if (m.type === "video") {
+              wrap.innerHTML = `<video controls src="${m.src}"></video>`;
+            } else if (m.type === "embed") {
+              wrap.innerHTML = `<iframe src="${m.src}" frameborder="0" allowfullscreen></iframe>`;
+            }
+            div.appendChild(wrap);
+          });
+          workDiv.appendChild(div);
+        });
+
+        // Skills
+        data.skills.forEach(s => {
+          const li = document.createElement("li");
+          li.textContent = s;
+          document.getElementById("skills").appendChild(li);
+        });
+
+        // Payments
+        data.payments.forEach(p => {
+          const li = document.createElement("li");
+          li.textContent = p;
+          document.getElementById("payments").appendChild(li);
+        });
+
+        // Links
+        data.links.forEach(l => {
+          const li = document.createElement("li");
+          li.innerHTML = `<a href="${l.href}" target="_blank">${l.title}</a>`;
+          document.getElementById("links").appendChild(li);
+        });
+
+        // Contacts
+        data.contacts.forEach(c => {
+          const li = document.createElement("li");
+          li.textContent = `${c.label}: ${c.value}`;
+          document.getElementById("contacts").appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>

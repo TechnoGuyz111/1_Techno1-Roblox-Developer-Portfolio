@@ -1,0 +1,39 @@
+{
+  "name": "Your Name",
+  "initials": "YN",
+  "tagline": "Experienced Roblox Developer specializing in scripting, UI, and world-building.",
+  "bio_markdown": "Hello! I'm a Roblox developer with over 3 years of experience creating games, systems, and immersive worlds. I specialize in **Lua scripting**, **UI design**, and **gameplay mechanics**. I’ve worked with small teams and solo projects, and I enjoy turning ideas into polished playable experiences.",
+
+  "work": [
+    {
+      "title": "Fantasy RPG Project",
+      "date": "2023-06-15",
+      "role": "Scripter & UI Designer",
+      "desc_markdown": "Built custom combat system, inventory UI, and quest framework. Integrated datastores and monetization features.",
+      "media": [
+        { "type": "image", "src": "https://placehold.co/300x200/png" },
+        { "type": "video", "src": "https://www.w3schools.com/html/mov_bbb.mp4" }
+      ]
+    },
+    {
+      "title": "Simulator Game Commission",
+      "date": "2022-11-02",
+      "role": "Scripter",
+      "desc_markdown": "Created progression systems, pets, and rebirth mechanics. Worked with group-owned monetization features.",
+      "media": [
+        { "type": "embed", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+      ]
+    }
+  ],
+
+  "skills": ["Lua", "Roblox Studio", "UI/UX", "Datastores", "Monetization", "Teamwork"],
+  "payments": ["PayPal", "Robux (Group/TC)", "Crypto"],
+  "links": [
+    {"title": "RoDevs Portfolio", "href": "https://rodevs.com/portfolios/1002264644515278909"},
+    {"title": "Roblox Talent Hub", "href": "https://create.roblox.com/talent/creators/2228809521"}
+  ],
+  "contacts": [
+    {"label": "Discord", "value": "YourDiscord#0001"},
+    {"label": "Email", "value": "youremail@example.com"}
+  ]
+}
