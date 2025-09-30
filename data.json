@@ -1,39 +1,42 @@
 {
   "name": "Your Name",
   "initials": "YN",
-  "tagline": "Experienced Roblox Developer specializing in scripting, UI, and world-building.",
-  "bio_markdown": "Hello! I'm a Roblox developer with over 3 years of experience creating games, systems, and immersive worlds. I specialize in **Lua scripting**, **UI design**, and **gameplay mechanics**. I’ve worked with small teams and solo projects, and I enjoy turning ideas into polished playable experiences.",
-
+  "tagline": "Roblox Developer • Scripter • UI/UX",
+  "actions": [
+    {"label":"Message on Roblox","href":"https://www.roblox.com/users/2228809521/profile"},
+    {"label":"Download CV","href":"#"}
+  ],
+  "bio_markdown": "Hi — I'm **YourName**, a Roblox developer focused on building immersive experiences, optimized systems and polished UI.\\n\\nI specialise in *Lua scripting*, game mechanics, and collaborating with artists & designers.",
   "work": [
     {
-      "title": "Fantasy RPG Project",
-      "date": "2023-06-15",
-      "role": "Scripter & UI Designer",
-      "desc_markdown": "Built custom combat system, inventory UI, and quest framework. Integrated datastores and monetization features.",
+      "title": "Epic Tycoon Revamp",
+      "date": "2024-11-12",
+      "role": "Lead Scripter",
+      "desc_markdown": "Overhauled the economy and added *multiplayer persistence*. Implemented analytics for balancing. [Play demo](https://www.roblox.com/games/123456789).",
       "media": [
-        { "type": "image", "src": "https://placehold.co/300x200/png" },
-        { "type": "video", "src": "https://www.w3schools.com/html/mov_bbb.mp4" }
+        {"type":"image","src":"https://placehold.co/640x360/png"},
+        {"type":"video","src":"https://www.w3schools.com/html/mov_bbb.mp4"},
+        {"type":"embed","src":"https://www.youtube.com/embed/dQw4w9WgXcQ"}
       ]
     },
     {
-      "title": "Simulator Game Commission",
-      "date": "2022-11-02",
-      "role": "Scripter",
-      "desc_markdown": "Created progression systems, pets, and rebirth mechanics. Worked with group-owned monetization features.",
-      "media": [
-        { "type": "embed", "src": "https://www.youtube.com/embed/dQw4w9WgXcQ" }
-      ]
+      "title": "Platformer Prototype",
+      "date":"2023-05-03",
+      "role":"Creator / Scripter",
+      "desc_markdown":"Prototype focused on movement and feel. Implemented modular input system and replay recorder.",
+      "media":[{"type":"image","src":"https://placehold.co/640x360/png"}]
     }
   ],
-
-  "skills": ["Lua", "Roblox Studio", "UI/UX", "Datastores", "Monetization", "Teamwork"],
-  "payments": ["PayPal", "Robux (Group/TC)", "Crypto"],
-  "links": [
-    {"title": "RoDevs Portfolio", "href": "https://rodevs.com/portfolios/1002264644515278909"},
-    {"title": "Roblox Talent Hub", "href": "https://create.roblox.com/talent/creators/2228809521"}
+  "skills":["Lua","Roblox Studio","UX/UI","Networking","Optimization","Git"],
+  "payments":["Roblox DevEx","PayPal","Crypto (ETH)"],
+  "links":[
+    {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
+    {"title":"Roblox Talent Page","href":"https://create.roblox.com/talent/creators/2228809521"},
+    {"title":"GitHub","href":"https://github.com/technoguyz111"}
   ],
-  "contacts": [
-    {"label": "Discord", "value": "YourDiscord#0001"},
-    {"label": "Email", "value": "youremail@example.com"}
+  "contacts":[
+    {"label":"Email","value":"you@example.com"},
+    {"label":"Discord","value":"YourTag#1234"},
+    {"label":"Roblox","value":"YourRobloxUsername"}
   ]
 }

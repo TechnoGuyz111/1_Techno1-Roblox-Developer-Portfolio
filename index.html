@@ -1,136 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #121212;
-      color: #eee;
-      margin: 0; padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: #1e1e1e;
-      border-bottom: 1px solid #333;
-    }
-    header h1 { margin: 0; font-size: 2rem; }
-    header p { opacity: 0.8; }
-    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-    section { margin-bottom: 3rem; }
-    h2 { border-bottom: 1px solid #333; padding-bottom: 0.3rem; }
-    .work-item, .skill, .link, .contact {
-      background: #1a1a1a;
-      padding: 1rem;
-      margin: 0.5rem 0;
-      border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    }
-    .media { margin-top: 0.5rem; }
-    iframe, video, img { max-width: 100%; border-radius: 6px; }
-    ul { padding-left: 1.2rem; }
-    a { color: #4da3ff; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roblox Dev Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- markdown-it for markdown descriptions -->
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 <body>
-  <header>
-    <h1 id="name"></h1>
-    <p id="tagline"></p>
-  </header>
-  <main>
-    <section>
-      <h2>About</h2>
-      <div id="bio"></div>
+  <main class="wrap">
+    <header class="profile-card">
+      <div class="avatar" id="avatar">YN</div>
+      <div class="profile-info">
+        <h1 id="name">Your Name</h1>
+        <div id="tagline" class="muted">Roblox Developer</div>
+        <div class="profile-actions" id="profile-actions"></div>
+      </div>
+    </header>
+
+    <section class="card" id="bio-card">
+      <h2 class="section-title">About</h2>
+      <div id="bio-html" class="bio-html"></div>
     </section>
-    <section>
-      <h2>Work</h2>
-      <div id="work"></div>
+
+    <section class="card" id="work-card">
+      <h2 class="section-title">Past work</h2>
+      <div id="work-list" class="work-list"></div>
     </section>
-    <section>
-      <h2>Skills</h2>
-      <ul id="skills"></ul>
-    </section>
-    <section>
-      <h2>Payments</h2>
-      <ul id="payments"></ul>
-    </section>
-    <section>
-      <h2>Links</h2>
-      <ul id="links"></ul>
-    </section>
-    <section>
-      <h2>Contacts</h2>
-      <ul id="contacts"></ul>
-    </section>
+
+    <div class="two-col">
+      <section class="card">
+        <h2 class="section-title">Skills</h2>
+        <div id="skills" class="chips"></div>
+      </section>
+
+      <aside class="card side-card">
+        <div>
+          <h2 class="section-title">Payments</h2>
+          <div id="payments" class="chips"></div>
+        </div>
+        <div style="margin-top:14px">
+          <h2 class="section-title">Links</h2>
+          <div id="links" class="links"></div>
+        </div>
+        <div style="margin-top:14px">
+          <h2 class="section-title">Contacts</h2>
+          <div id="contacts" class="contacts"></div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Media modal -->
+    <div id="media-modal" class="modal hidden" role="dialog" aria-hidden="true">
+      <div class="modal-inner">
+        <button id="modal-close" class="btn-close" aria-label="Close">×</button>
+        <div id="modal-media" class="modal-media"></div>
+      </div>
+    </div>
+
+    <footer class="footer muted">Built for GitHub Pages • Content from <code>data.json</code></footer>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    fetch("data.json")
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("name").textContent = data.name;
-        document.getElementById("tagline").textContent = data.tagline;
-        document.getElementById("bio").innerHTML = marked.parse(data.bio_markdown);
-
-        // Work
-        const workDiv = document.getElementById("work");
-        data.work.forEach(w => {
-          const div = document.createElement("div");
-          div.className = "work-item";
-          div.innerHTML = `
-            <h3>${w.title}</h3>
-            <p><strong>${w.role}</strong> — ${w.date}</p>
-            <div>${marked.parse(w.desc_markdown)}</div>
-          `;
-          w.media?.forEach(m => {
-            const wrap = document.createElement("div");
-            wrap.className = "media";
-            if (m.type === "image") {
-              wrap.innerHTML = `<img src="${m.src}"/>`;
-            } else if (m.type === "video") {
-              wrap.innerHTML = `<video controls src="${m.src}"></video>`;
-            } else if (m.type === "embed") {
-              wrap.innerHTML = `<iframe src="${m.src}" frameborder="0" allowfullscreen></iframe>`;
-            }
-            div.appendChild(wrap);
-          });
-          workDiv.appendChild(div);
-        });
-
-        // Skills
-        data.skills.forEach(s => {
-          const li = document.createElement("li");
-          li.textContent = s;
-          document.getElementById("skills").appendChild(li);
-        });
-
-        // Payments
-        data.payments.forEach(p => {
-          const li = document.createElement("li");
-          li.textContent = p;
-          document.getElementById("payments").appendChild(li);
-        });
-
-        // Links
-        data.links.forEach(l => {
-          const li = document.createElement("li");
-          li.innerHTML = `<a href="${l.href}" target="_blank">${l.title}</a>`;
-          document.getElementById("links").appendChild(li);
-        });
-
-        // Contacts
-        data.contacts.forEach(c => {
-          const li = document.createElement("li");
-          li.textContent = `${c.label}: ${c.value}`;
-          document.getElementById("contacts").appendChild(li);
-        });
-      });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
