@@ -5,36 +5,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Roblox Dev Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- markdown-it for markdown descriptions -->
+  <!-- markdown-it for markdown descriptions in bio and work items -->
   <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 <body>
   <main class="wrap">
     <header class="profile-card">
+      <!-- Circular avatar - displays image from assets or initials as fallback -->
       <div class="avatar" id="avatar">YN</div>
       <div class="profile-info">
         <h1 id="name">Your Name</h1>
         <div id="tagline" class="muted">Roblox Developer</div>
+        <!-- Single share button for entire portfolio -->
         <div class="profile-actions" id="profile-actions"></div>
       </div>
     </header>
 
+    <!-- About section with markdown support -->
     <section class="card" id="bio-card">
       <h2 class="section-title">About</h2>
       <div id="bio-html" class="bio-html"></div>
     </section>
 
+    <!-- Work portfolio section -->
     <section class="card" id="work-card">
       <h2 class="section-title">Past work</h2>
       <div id="work-list" class="work-list"></div>
     </section>
 
+    <!-- Two column layout for skills and sidebar -->
     <div class="two-col">
-      <section class="card skills-card"> <!-- Added skills-card class -->
+      <!-- Skills card with compact layout -->
+      <section class="card skills-card">
         <h2 class="section-title">Skills</h2>
         <div id="skills" class="chips"></div>
       </section>
 
+      <!-- Sidebar with payments, links and contacts -->
       <aside class="card side-card">
         <div>
           <h2 class="section-title">Payments</h2>
@@ -51,7 +58,7 @@
       </aside>
     </div>
 
-    <!-- Media modal -->
+    <!-- Modal for full-size media viewing -->
     <div id="media-modal" class="modal hidden" role="dialog" aria-hidden="true">
       <div class="modal-inner">
         <button id="modal-close" class="btn-close" aria-label="Close">×</button>
@@ -59,9 +66,11 @@
       </div>
     </div>
 
+    <!-- Footer note -->
     <footer class="footer muted">Built for GitHub Pages • Content from <code>data.json</code></footer>
   </main>
 
+  <!-- Main portfolio script -->
   <script src="script.js"></script>
 </body>
 </html>

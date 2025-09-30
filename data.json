@@ -1,6 +1,7 @@
 {
   "name": "Your Name",
   "initials": "YN",
+  "avatar": "assets/images/avatar.jpg",
   "tagline": "Roblox Developer • Scripter • UI/UX",
   "bio_markdown": "Hi — I'm **YourName**, a Roblox developer focused on building immersive experiences, optimized systems and polished UI.\\n\\nI specialise in *Lua scripting*, game mechanics, and collaborating with artists & designers.",
   "work": [
@@ -10,9 +11,9 @@
       "role": "Lead Scripter",
       "desc_markdown": "Overhauled the economy and added *multiplayer persistence*. Implemented analytics for balancing. [Play demo](https://www.roblox.com/games/123456789).",
       "media": [
-        {"type":"image","src":"https://placehold.co/640x360/png"},
-        {"type":"video","src":"https://www.w3schools.com/html/mov_bbb.mp4"},
-        {"type":"embed","src":"https://www.youtube.com/embed/dQw4w9WgXcQ"}
+        {"type":"image","src":"assets/images/epic-tycoon-1.jpg"},
+        {"type":"image","src":"assets/images/epic-tycoon-2.jpg"},
+        {"type":"video","src":"assets/videos/epic-tycoon-demo.mp4"}
       ]
     },
     {
@@ -20,7 +21,10 @@
       "date":"2023-05-03",
       "role":"Creator / Scripter",
       "desc_markdown":"Prototype focused on movement and feel. Implemented modular input system and replay recorder.",
-      "media":[{"type":"image","src":"https://placehold.co/640x360/png"}]
+      "media":[
+        {"type":"image","src":"assets/images/platformer-1.jpg"},
+        {"type":"image","src":"assets/images/platformer-2.jpg"}
+      ]
     }
   ],
   "skills":["Lua","Roblox Studio","UX/UI","Networking","Optimization","Git"],
