@@ -1,4 +1,3 @@
-// script.js — loads data.json, renders portfolio, interactive behaviours
 const md = window.markdownit({html:true,linkify:true});
 async function fetchData(){
   try {
@@ -21,12 +20,33 @@ function buildProfile(data){
 
   const pa = document.getElementById('profile-actions');
   pa.innerHTML='';
-  if(Array.isArray(data.actions)){
-    data.actions.forEach(a=>{
-      const btn = el('a','btn primary'); btn.href = a.href || '#'; btn.target='_blank'; btn.textContent = a.label || 'Action';
-      pa.appendChild(btn);
-    });
-  }
+  
+  // Single share button that copies portfolio link
+  const shareBtn = el('button','btn primary'); 
+  shareBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+    <polyline points="16 6 12 2 8 6"></polyline>
+    <line x1="12" y1="2" x2="12" y2="15"></line>
+  </svg> Share Portfolio`;
+  
+  shareBtn.addEventListener('click', async ()=>{
+    const url = window.location.href;
+    if(navigator.share){ 
+      try{ 
+        await navigator.share({title:data.name, text:data.tagline, url}); 
+        return; 
+      } catch(e){} 
+    }
+    navigator.clipboard.writeText(url).then(()=>{ 
+      const originalText = shareBtn.innerHTML;
+      shareBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M20 6L9 17l-5-5"></path>
+      </svg> Copied!`;
+      setTimeout(() => { shareBtn.innerHTML = originalText; }, 2000);
+    }).catch(()=>{ prompt('Copy this link', url) });
+  });
+  
+  pa.appendChild(shareBtn);
 }
 
 function buildBio(data){
@@ -38,7 +58,6 @@ function buildWork(data){
   (data.work||[]).forEach((w, idx)=>{
     const item = el('div','work-item');
     const left = el('div');
-    const right = el('div','work-actions');
 
     const title = el('h3','work-title', w.title || 'Untitled');
     const meta = el('div','work-meta', `${formatDate(w.date||'')} • ${w.role||''}`);
@@ -46,50 +65,35 @@ function buildWork(data){
 
     left.appendChild(title); left.appendChild(meta); left.appendChild(desc);
 
-    // media
+    // media with horizontal scroll
     if(Array.isArray(w.media) && w.media.length){
       const strip = el('div','media-strip');
+      const scrollContainer = el('div','media-scroll-container');
+      
       w.media.forEach(m=>{
+        const mediaItem = el('div','media-item');
         if(m.type==='image'){
           const img = el('img'); img.src = m.src; img.alt = m.alt||w.title||''; img.loading='lazy';
           img.addEventListener('click', ()=> openModal('image', m.src));
-          strip.appendChild(img);
+          mediaItem.appendChild(img);
         } else if(m.type==='video'){
-          // small preview video element (muted poster optional)
-          const vid = el('video'); vid.controls = true; vid.src = m.src; if(m.poster) vid.poster = m.poster; vid.style.maxHeight='160px';
-          strip.appendChild(vid);
+          const vid = el('video'); vid.controls = true; vid.src = m.src; 
+          if(m.poster) vid.poster = m.poster;
+          mediaItem.appendChild(vid);
         } else if(m.type==='embed'){
-          // thumbnail iframe preview (open modal on click)
-          const frame = el('iframe'); frame.src = m.src; frame.width='320'; frame.height='180'; frame.loading='lazy'; frame.allow='autoplay; fullscreen';
-          strip.appendChild(frame);
+          const frame = el('iframe'); frame.src = m.src; frame.loading='lazy'; 
+          frame.allow='autoplay; fullscreen';
+          mediaItem.appendChild(frame);
         }
+        scrollContainer.appendChild(mediaItem);
       });
+      
+      strip.appendChild(scrollContainer);
       left.appendChild(strip);
     }
 
-    // right actions: request, share, copy link
-    const req = el('button','btn primary'); req.textContent='Request Quote';
-    req.addEventListener('click', ()=> alert('Request function — send details to the person managing commissions.'));
-
-    const share = el('button','btn ghost'); share.textContent='Share';
-    share.addEventListener('click', async ()=>{
-      const url = window.location.href + `#work-${idx}`;
-      if(navigator.share){ try{ await navigator.share({title:w.title, text:w.role, url}); return; } catch(e){} }
-      navigator.clipboard.writeText(url).then(()=>{ alert('Link copied to clipboard'); }).catch(()=>{ prompt('Copy this link', url) });
-    });
-
-    const copy = el('button','btn'); copy.textContent='Copy Link';
-    copy.addEventListener('click', ()=> {
-      const u = window.location.href + `#work-${idx}`;
-      navigator.clipboard.writeText(u).then(()=> alert('Link copied'), ()=> prompt('Copy', u));
-    });
-
-    // anchor id for linking
     item.id = `work-${idx}`;
-
-    right.appendChild(req); right.appendChild(share); right.appendChild(copy);
-
-    item.appendChild(left); item.appendChild(right);
+    item.appendChild(left);
     list.appendChild(item);
   });
 }
@@ -103,12 +107,16 @@ function buildSide(data){
 
   const links = document.getElementById('links'); links.innerHTML='';
   (data.links||[]).forEach(l=>{
-    const a = el('a'); a.href = l.href; a.target='_blank'; a.textContent = l.title; links.appendChild(a);
+    const a = el('a'); a.href = l.href; a.target='_blank'; a.textContent = l.title; 
+    a.innerHTML = `${l.title} <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+    links.appendChild(a);
   });
 
   const contacts = document.getElementById('contacts'); contacts.innerHTML='';
   (data.contacts||[]).forEach(c=>{
-    const row = el('div'); row.innerHTML = `<strong>${c.label}:</strong> ${c.value}`; contacts.appendChild(row);
+    const row = el('div','contact-item'); 
+    row.innerHTML = `<strong>${c.label}:</strong><span>${c.value}</span>`; 
+    contacts.appendChild(row);
   });
 }
 
@@ -124,12 +132,17 @@ function openModal(type, src){
   if(type==='image'){
     const img = document.createElement('img'); img.src = src; modalMedia.appendChild(img);
   } else if(type==='embed'){
-    const iframe = document.createElement('iframe'); iframe.src = src; iframe.width='100%'; iframe.height='480'; iframe.allow='autoplay; fullscreen'; modalMedia.appendChild(iframe);
+    const iframe = document.createElement('iframe'); iframe.src = src; iframe.allow='autoplay; fullscreen'; modalMedia.appendChild(iframe);
   } else if(type==='video'){
     const v = document.createElement('video'); v.controls=true; v.src=src; v.autoplay=true; modalMedia.appendChild(v);
   }
 }
-function closeModal(){ modal.classList.add('hidden'); modal.setAttribute('aria-hidden','true'); modalMedia.innerHTML=''; }
+
+function closeModal(){ 
+  modal.classList.add('hidden'); 
+  modal.setAttribute('aria-hidden','true'); 
+  modalMedia.innerHTML=''; 
+}
 
 /* init */
 (async ()=>{

@@ -2,10 +2,6 @@
   "name": "Your Name",
   "initials": "YN",
   "tagline": "Roblox Developer • Scripter • UI/UX",
-  "actions": [
-    {"label":"Message on Roblox","href":"https://www.roblox.com/users/2228809521/profile"},
-    {"label":"Download CV","href":"#"}
-  ],
   "bio_markdown": "Hi — I'm **YourName**, a Roblox developer focused on building immersive experiences, optimized systems and polished UI.\\n\\nI specialise in *Lua scripting*, game mechanics, and collaborating with artists & designers.",
   "work": [
     {
