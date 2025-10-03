@@ -1,18 +1,29 @@
 const md = window.markdownit({html:true,linkify:true});
 
-// Local data fallback for testing when data.json can't be loaded
+// Icon mappings for different sections
+const iconMap = {
+  about: "assets/icons/About.svg",
+  work: "assets/icons/Work.svg",           // Past Work section title
+  workItem: "assets/icons/WorkItem.svg",    // All work item headings use this same icon
+  skills: "assets/icons/Skills.svg",
+  payments: "assets/icons/Payments.svg", 
+  links: "assets/icons/Links.svg",
+  skill: "assets/icons/skill.svg"
+};
+
+// Local data fallback
 const localData = {
-  "name": "Your Name",
-  "initials": "YN",
+  "name": "1_Techno1",
+  "initials": "lys_techno",
   "avatar": "assets/images/avatar.jpg",
-  "tagline": "Roblox Developer • Scripter • UI/UX",
-  "bio_markdown": "Hi — I'm **YourName**, a Roblox developer focused on building immersive experiences, optimized systems and polished UI.\\n\\nI specialise in *Lua scripting*, game mechanics, and collaborating with artists & designers.",
+  "tagline": "Roblox Developer • Lua Scripter • UI/UX Designer",
+  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 8+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
   "work": [
     {
-      "title": "Epic Tycoon Revamp",
-      "date": "2024-11-12",
-      "role": "Lead Scripter",
-      "desc_markdown": "Overhauled the economy and added *multiplayer persistence*. Implemented analytics for balancing. [Play demo](https://www.roblox.com/games/123456789).",
+      "title": "[LATEST] Round-based Minigames",
+      "date": "2025-09-01",
+      "role": "Lead Scripter / UI Designer",
+      "desc_markdown": "Designing immersive, reactive and responsive UI to complement game mechanics such as integrated custom client controls, animations and cosmetics, as well as systems from Voting and Teleporting to Round-based game systems, including features such as RNG hooks, DataStore-implemented reward loops and modular, configurable programs to allow a wide range of varied minigames to attract all players.",
       "media": [
         {"type":"image","src":"assets/images/epic-tycoon-1.jpg"},
         {"type":"image","src":"assets/images/epic-tycoon-2.jpg"},
@@ -20,27 +31,56 @@ const localData = {
       ]
     },
     {
-      "title": "Platformer Prototype",
-      "date":"2023-05-03",
-      "role":"Creator / Scripter",
-      "desc_markdown":"Prototype focused on movement and feel. Implemented modular input system and replay recorder.",
+      "title": "Fish a Brainrot",
+      "date":"2025-07-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"UI/UX engineering for an up-and-coming simulator game. Creating a refreshed stud-style graphical User Interface, including interactive elements such as local appearances and vivid animations. Lead scripter for classic genre systems such as plot differentiation, management and infiltration, applying loops such as RNG hooks and reward systems in a general objective style.",
+      "media":[
+        {"type":"image","src":"assets/images/platformer-1.jpg"},
+        {"type":"image","src":"assets/images/platformer-2.jpg"}
+      ]
+    },
+    {
+      "title": "Tower to ???",
+      "date":"2017-05-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"Currently leading development on a Roblox simulation game, handling scripting, UI, animations, as well as server and client-side systems from scratch. I’m experienced in creating scalable systems that work reliably across different game types and platforms, ensuring smooth gameplay. *(A passion project / personal game I've been working on besides professional work)*.",
+      "media":[
+        {"type":"image","src":"assets/images/platformer-1.jpg"},
+        {"type":"image","src":"assets/images/platformer-2.jpg"}
+      ]
+    },
+    {
+      "title": "Ultimate Tycoon Defence",
+      "date":"2022-12-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"A Tower Defense / Tycoon hybrid Roblox game. *(A passion project / personal game I've been working on besides professional work)*.",
       "media":[
         {"type":"image","src":"assets/images/platformer-1.jpg"},
         {"type":"image","src":"assets/images/platformer-2.jpg"}
       ]
     }
   ],
-  "skills":["Lua","Roblox Studio","UX/UI","Networking","Optimization","Git"],
-  "payments":["Roblox DevEx","PayPal","Crypto (ETH)"],
+  "skills":["Scripting","UI Design","User Experience","Graphics Design","Animation","Game Design","Programmer","Social Media","Marketing","Development","Modeling","Building"],
+  "payments":[
+    {"name": "PayPal", "color": "#0070ba", "icon": "nil"},
+    {"name": "Robux", "color": "#a0a0a0", "icon": "nil"},
+    {"name": "Percentages", "color": "#627eea", "icon": "nil"},
+    {"name": "Bitcoin", "color": "#f7931a", "icon": "nil"},
+    {"name": "Venmo", "color": "#008CFF", "icon": "nil"},
+    {"name": "CashApp", "color": "#00D632", "icon":"nil"},
+    {"name": "Bank Transfer", "color": "#deaeaf", "icon": "nil"},
+    {"name": "Giftcards", "color": "#FF5A5F", "icon": "nil"}
+  ],
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
     {"title":"Roblox Talent Page","href":"https://create.roblox.com/talent/creators/2228809521"},
     {"title":"GitHub","href":"https://github.com/technoguyz111"}
   ],
   "contacts":[
-    {"label":"Email","value":"you@example.com"},
-    {"label":"Discord","value":"YourTag#1234"},
-    {"label":"Roblox","value":"YourRobloxUsername"}
+    {"label":"Email","value":"lystechno7@yahoo.com"},
+    {"label":"Discord","value":"lys_techno"},
+    {"label":"Roblox","value":"1_Techno1"}
   ]
 };
 
@@ -55,7 +95,6 @@ async function fetchData(){
   }
 }
 
-// Helper function to create DOM elements
 function el(tag, cls, html){ 
   const d = document.createElement(tag); 
   if(cls) d.className = cls; 
@@ -73,13 +112,26 @@ function formatDate(iso){
   } catch(e){ return iso; }
 }
 
+// Helper function to create icon element
+function createIcon(iconPath, alt = "", size = "20px") {
+  const icon = document.createElement('img');
+  icon.src = iconPath;
+  icon.alt = alt;
+  icon.className = 'section-icon'; // Size now controlled by CSS
+  // Removed inline width/height styles
+  icon.onerror = function() {
+    // Fallback if icon fails to load
+    this.style.display = 'none';
+  };
+  return icon;
+}
+
 function buildProfile(data){
   document.getElementById('name').textContent = data.name;
   document.getElementById('tagline').textContent = data.tagline || '';
   
   const avatar = document.getElementById('avatar');
   
-  // Use image if available, otherwise use initials as fallback
   if (data.avatar) {
     avatar.innerHTML = '';
     const img = document.createElement('img');
@@ -87,7 +139,6 @@ function buildProfile(data){
     img.alt = `${data.name}'s profile picture`;
     img.loading = 'lazy';
     img.onerror = function() {
-      // Fall back to initials if image fails to load
       console.error('Failed to load avatar image:', data.avatar);
       avatar.innerHTML = '';
       avatar.textContent = data.initials || (data.name.split(' ').map(s => s[0]).slice(0, 2).join('')).toUpperCase();
@@ -100,7 +151,6 @@ function buildProfile(data){
   const pa = document.getElementById('profile-actions');
   pa.innerHTML = '';
   
-  // Single share button that copies portfolio link
   const shareBtn = el('button', 'btn primary'); 
   shareBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
@@ -129,10 +179,21 @@ function buildProfile(data){
 }
 
 function buildBio(data){
+  const aboutTitle = document.querySelector('#bio-card .section-title');
+  aboutTitle.innerHTML = '';
+  aboutTitle.appendChild(createIcon(iconMap.about, "About icon"));
+  aboutTitle.appendChild(document.createTextNode('About'));
+  
   document.getElementById('bio-html').innerHTML = md.render(data.bio_markdown || '');
 }
 
 function buildWork(data){
+  // Add icon to Past Work section title
+  const workTitle = document.querySelector('#work-card .section-title');
+  workTitle.innerHTML = '';
+  workTitle.appendChild(createIcon(iconMap.work, "Past Work icon")); // Uses work icon
+  workTitle.appendChild(document.createTextNode('Past work'));
+  
   const list = document.getElementById('work-list'); 
   list.innerHTML = '';
   
@@ -140,16 +201,21 @@ function buildWork(data){
     const item = el('div', 'work-item');
     const left = el('div');
 
-    const title = el('h3', 'work-title', w.title || 'Untitled');
+    // Work item header with DIFFERENT icon (workItem)
+    const header = el('div', 'work-header');
+    const title = el('h3', 'work-title');
+    title.appendChild(createIcon(iconMap.workItem, "Project icon", "22px")); // Uses workItem icon
+    title.appendChild(document.createTextNode(w.title || 'Untitled'));
+    
     const meta = el('div', 'work-meta', `${formatDate(w.date || '')} • ${w.role || ''}`);
     const desc = el('div', 'work-desc'); 
     desc.innerHTML = md.render(w.desc_markdown || '');
 
-    left.appendChild(title); 
-    left.appendChild(meta); 
+    header.appendChild(title);
+    header.appendChild(meta);
+    left.appendChild(header);
     left.appendChild(desc);
 
-    // Media with horizontal scroll container
     if(Array.isArray(w.media) && w.media.length){
       const strip = el('div', 'media-strip');
       const scrollContainer = el('div', 'media-scroll-container');
@@ -163,7 +229,7 @@ function buildWork(data){
           img.loading = 'lazy';
           img.onerror = function() {
             console.error('Failed to load image:', m.src);
-            this.style.display = 'none'; // Hide broken images
+            this.style.display = 'none';
           };
           img.addEventListener('click', () => openModal('image', m.src));
           mediaItem.appendChild(img);
@@ -197,14 +263,53 @@ function buildWork(data){
 }
 
 function buildSide(data){
+  const skillsTitle = document.querySelector('#skills-card .section-title');
+  skillsTitle.innerHTML = '';
+  skillsTitle.appendChild(createIcon(iconMap.skills, "Skills icon"));
+  skillsTitle.appendChild(document.createTextNode('Skills'));
+  
+  const paymentsTitle = document.querySelector('#payments-section .section-title');
+  paymentsTitle.innerHTML = '';
+  paymentsTitle.appendChild(createIcon(iconMap.payments, "Payments icon"));
+  paymentsTitle.appendChild(document.createTextNode('Payments'));
+  
+  const linksTitle = document.querySelector('#links-section .section-title');
+  linksTitle.innerHTML = '';
+  linksTitle.appendChild(createIcon(iconMap.links, "Links icon"));
+  linksTitle.appendChild(document.createTextNode('Links'));
+
+  // Skills with icons
   const skills = document.getElementById('skills'); 
   skills.innerHTML = '';
-  (data.skills || []).forEach(s => skills.appendChild(el('div', 'chip', s)));
+  (data.skills || []).forEach(s => {
+    const chip = el('div', 'chip skill-chip');
+    chip.appendChild(createIcon(iconMap.skill, "Skill icon", "16px"));
+    chip.appendChild(document.createTextNode(s));
+    skills.appendChild(chip);
+  });
 
+  // Payments with icons, colored backgrounds, and hover effects
   const payments = document.getElementById('payments'); 
   payments.innerHTML = '';
-  (data.payments || []).forEach(p => payments.appendChild(el('div', 'chip', p)));
+  (data.payments || []).forEach(p => {
+    const chip = el('div', 'chip payment-chip');
+    
+    // Set base color with transparency
+    chip.style.backgroundColor = `${p.color}20`; // 20 = ~12% opacity in hex
+    chip.style.color = p.color;
+    chip.style.borderColor = `${p.color}40`; // 40 = ~25% opacity
+    
+    // Add icon
+    chip.appendChild(createIcon(p.icon || iconMap.payments, `${p.name} icon`, "16px"));
+    chip.appendChild(document.createTextNode(p.name || p));
+    
+    // Store the color for hover effect
+    chip.dataset.color = p.color;
+    
+    payments.appendChild(chip);
+  });
 
+  // Links
   const links = document.getElementById('links'); 
   links.innerHTML = '';
   (data.links || []).forEach(l => {
@@ -216,6 +321,7 @@ function buildSide(data){
     links.appendChild(a);
   });
 
+  // Contacts
   const contacts = document.getElementById('contacts'); 
   contacts.innerHTML = '';
   (data.contacts || []).forEach(c => {
@@ -225,7 +331,7 @@ function buildSide(data){
   });
 }
 
-/* Modal functionality for media viewing */
+/* Modal functionality */
 const modal = document.getElementById('media-modal');
 const modalMedia = document.getElementById('modal-media');
 document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -262,7 +368,7 @@ function closeModal(){
   modalMedia.innerHTML = ''; 
 }
 
-// Initialize the portfolio when DOM is loaded
+// Initialize portfolio
 (async () => {
   const data = await fetchData();
   if(!data) { 

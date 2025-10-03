@@ -1,15 +1,15 @@
 {
-  "name": "Your Name",
-  "initials": "YN",
+  "name": "1_Techno1",
+  "initials": "lys_techno",
   "avatar": "assets/images/avatar.jpg",
-  "tagline": "Roblox Developer • Scripter • UI/UX",
-  "bio_markdown": "Hi — I'm **YourName**, a Roblox developer focused on building immersive experiences, optimized systems and polished UI.\\n\\nI specialise in *Lua scripting*, game mechanics, and collaborating with artists & designers.",
+  "tagline": "Roblox Developer • Lua Scripter • UI/UX Designer",
+  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 8+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
   "work": [
     {
-      "title": "Epic Tycoon Revamp",
-      "date": "2024-11-12",
-      "role": "Lead Scripter",
-      "desc_markdown": "Overhauled the economy and added *multiplayer persistence*. Implemented analytics for balancing. [Play demo](https://www.roblox.com/games/123456789).",
+      "title": "[LATEST] Round-based Minigames",
+      "date": "2025-09-01",
+      "role": "Lead Scripter / UI Designer",
+      "desc_markdown": "Designing immersive, reactive and responsive UI to complement game mechanics such as integrated custom client controls, animations and cosmetics, as well as systems from Voting and Teleporting to Round-based game systems, including features such as RNG hooks, DataStore-implemented reward loops and modular, configurable programs to allow a wide range of varied minigames to attract all players.",
       "media": [
         {"type":"image","src":"assets/images/epic-tycoon-1.jpg"},
         {"type":"image","src":"assets/images/epic-tycoon-2.jpg"},
@@ -17,26 +17,55 @@
       ]
     },
     {
-      "title": "Platformer Prototype",
-      "date":"2023-05-03",
-      "role":"Creator / Scripter",
-      "desc_markdown":"Prototype focused on movement and feel. Implemented modular input system and replay recorder.",
+      "title": "Fish a Brainrot",
+      "date":"2025-07-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"UI/UX engineering for an up-and-coming simulator game. Creating a refreshed stud-style graphical User Interface, including interactive elements such as local appearances and vivid animations. Lead scripter for classic genre systems such as plot differentiation, management and infiltration, applying loops such as RNG hooks and reward systems in a general objective style.",
+      "media":[
+        {"type":"image","src":"assets/images/platformer-1.jpg"},
+        {"type":"image","src":"assets/images/platformer-2.jpg"}
+      ]
+    },
+    {
+      "title": "Tower to ???",
+      "date":"2017-05-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"Currently leading development on a Roblox simulation game, handling scripting, UI, animations, as well as server and client-side systems from scratch. I’m experienced in creating scalable systems that work reliably across different game types and platforms, ensuring smooth gameplay. *(A passion project / personal game I've been working on besides professional work)*.",
+      "media":[
+        {"type":"image","src":"assets/images/platformer-1.jpg"},
+        {"type":"image","src":"assets/images/platformer-2.jpg"}
+      ]
+    },
+    {
+      "title": "Ultimate Tycoon Defence",
+      "date":"2022-12-01",
+      "role":"Lead Scripter / UI Designer",
+      "desc_markdown":"A Tower Defense / Tycoon hybrid Roblox game. *(A passion project / personal game I've been working on besides professional work)*.",
       "media":[
         {"type":"image","src":"assets/images/platformer-1.jpg"},
         {"type":"image","src":"assets/images/platformer-2.jpg"}
       ]
     }
   ],
-  "skills":["Lua","Roblox Studio","UX/UI","Networking","Optimization","Git"],
-  "payments":["Roblox DevEx","PayPal","Crypto (ETH)"],
+  "skills":["Scripting","UI Design","User Experience","Graphics Design","Animation","Game Design","Programmer","Social Media","Marketing","Development","Modeling","Building"],
+  "payments":[
+    {"name": "PayPal", "color": "#0070ba", "icon": "nil"},
+    {"name": "Robux", "color": "#a0a0a0", "icon": "nil"},
+    {"name": "Percentages", "color": "#627eea", "icon": "nil"},
+    {"name": "Bitcoin", "color": "#f7931a", "icon": "nil"},
+    {"name": "Venmo", "color": "#008CFF", "icon": "nil"},
+    {"name": "CashApp", "color": "#00D632", "icon":"nil"},
+    {"name": "Bank Transfer", "color": "#deaeaf", "icon": "nil"},
+    {"name": "Giftcards", "color": "#FF5A5F", "icon": "nil"}
+  ],
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
     {"title":"Roblox Talent Page","href":"https://create.roblox.com/talent/creators/2228809521"},
     {"title":"GitHub","href":"https://github.com/technoguyz111"}
   ],
   "contacts":[
-    {"label":"Email","value":"you@example.com"},
-    {"label":"Discord","value":"YourTag#1234"},
-    {"label":"Roblox","value":"YourRobloxUsername"}
+    {"label":"Email","value":"lystechno7@yahoo.com"},
+    {"label":"Discord","value":"lys_techno"},
+    {"label":"Roblox","value":"1_Techno1"}
   ]
 }
