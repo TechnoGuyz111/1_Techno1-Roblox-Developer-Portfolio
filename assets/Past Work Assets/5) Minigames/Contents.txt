@@ -1,0 +1,4 @@
+			"title": "Party City!",
+			"date": "2025-08-18",
+			"role": "Scripter / UI Designer",
+			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter and UI Designer**, building systems for **game selection, round management, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames and event types.",
