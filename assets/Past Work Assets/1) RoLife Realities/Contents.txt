@@ -1,4 +1,4 @@
 			"title": "RoLife: Realities",
 			"date": "2025-08-04",
-			"role": "Scripter / UI Designer",
+			"role": "UI Designer",
 			"desc_markdown": "Contributed to **RoLife: Realities**, an ambitious next-generation **realistic life simulator** on Roblox developed by Rubosano Studios. Worked on **core gameplay systems**, including in-game devices, **economy mechanics**, and **UI interfaces** such as phones and social apps. The project aimed to create a deeply immersive world featuring **player-owned businesses**, **dynamic social platforms (RoTube, RoGram, RoChat)**, **sports leagues**, **pets**, and **aging systems**, all within a large open-world city."

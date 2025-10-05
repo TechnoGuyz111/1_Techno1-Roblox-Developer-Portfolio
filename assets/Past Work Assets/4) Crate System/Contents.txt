@@ -1,4 +1,4 @@
-			"title": "Crate & Reward System Commission",
+			"title": "[Commission] Crate System",
 			"date": "2025-08-17",
-			"role": "Scripter / UI Designer",
-			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a polished and exciting player experience with data persistence and visual appeal. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools, all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
+			"role": "Scripter • UI Designer",
+			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional gamepasses for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools, all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",

@@ -1,4 +1,5 @@
-			"title": "Fish and Steal: A Brainrot Evolution",
+			"title": "Fish and Steal A Brainrot",
 			"date": "2025-08-04",
-			"role": "Scripter / UI Designer",
-			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' comedy game** inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems. The project represents a fast-paced creative adaptation — transforming a relaxing simulator into an ironic, meme-driven experience aligned with current Roblox trends.",
+			"role": "Scripter • UI Designer",
+			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game** inspired by the currently trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops (to name a few). The project represents a fast-paced creative adaptation — transforming a relaxing simulator into a hyperactive experience aligned with current Roblox trends.",
+

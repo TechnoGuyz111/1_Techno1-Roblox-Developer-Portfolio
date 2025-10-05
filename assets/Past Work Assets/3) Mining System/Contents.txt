@@ -1,4 +1,4 @@
-			"title": "Modular Mining System Commission",
+			"title": "[Commission] Mining System",
 			"date": "2025-08-16",
-			"role": "Scripter / Animator",
-			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for destructible rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
+			"role": "Scripter • UI Design • Animator",
+			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for respawning mineable rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",

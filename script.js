@@ -20,17 +20,17 @@ const localData = {
     {
 			"title": "Party City!",
 			"date": "2025-08-18",
-			"role": "Scripter / UI Designer / Animator",
-			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter and UI Designer**, building systems for **game selection, round management, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - and various event types.",
+			"role": "Scripter • UI Designer • Animator",
+			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - and various event types.",
        "media":[
         {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},
         {"type":"video","src":"assets/Past Work Assets/5) Minigames/MinigamesVotingSystem.mp4"}
       ]
     },
     {
-			"title": "[Commission] Crate + Reward System",
+			"title": "[Commission] Crate System",
 			"date": "2025-08-17",
-			"role": "Scripter / UI Designer",
+			"role": "Scripter • UI Designer",
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional gamepasses for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools, all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
        "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
@@ -41,8 +41,8 @@ const localData = {
     {
 			"title": "[Commission] Mining System",
 			"date": "2025-08-16",
-			"role": "Scripter / UI Designer / Animator",
-			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for spawning mineable rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
+			"role": "Scripter • UI Designer • Animator",
+			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for respawning mineable rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
       "media":[
         {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
         {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"},
@@ -53,7 +53,7 @@ const localData = {
     {
 			"title": "Fish and Steal A Brainrot",
 			"date": "2025-08-04",
-			"role": "Scripter / UI Designer",
+			"role": "Scripter • UI Designer",
 			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game** inspired by the currently trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops (to name a few). The project represents a fast-paced creative adaptation — transforming a relaxing simulator into a hyperactive experience aligned with current Roblox trends.",
       "media":[
         {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
@@ -65,8 +65,8 @@ const localData = {
     {
 			"title": "RoLife: Realities",
 			"date": "2025-08-04",
-			"role": "Scripter / UI Designer",
-			"desc_markdown": "Contributed to **RoLife: Realities**, an ambitious next-generation **realistic life simulator** on Roblox developed by Rubosano Studios. Worked on **core gameplay systems**, including in-game devices, **economy mechanics**, and **UI interfaces** such as phones and social apps. The project aims to create a deeply immersive world featuring **player-owned businesses**, **dynamic social platforms (RoTube, RoGram, RoChat)**, **sports leagues**, **pets**, and **aging systems**, all within a large open-world platform.", 
+			"role": "UI Designer",
+			"desc_markdown": "Contributed to **RoLife: Realities**, an ambitious next-generation **realistic life simulator** on Roblox developed by Rubosano Studios. Worked on **core gameplay systems**, including in-game devices, **economy mechanics**, and **UI interfaces** such as phones and social apps. The project aimed to create a deeply immersive world featuring **player-owned businesses**, **dynamic social platforms (RoTube, RoGram, RoChat)**, **sports leagues**, **pets**, and **aging systems**, all within a large open-world city.", 
       "media":[
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/RoLifeIcon.jpg"},
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/BloxPhone1.png"}
@@ -87,6 +87,7 @@ const localData = {
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
     {"title":"Roblox Talent Page","href":"https://create.roblox.com/talent/creators/2228809521"},
+    {"title":"Paypal","href":"https://paypal.me/lystechno7"},
     {"title":"GitHub","href":"https://github.com/technoguyz111"}
   ],
   "contacts":[
