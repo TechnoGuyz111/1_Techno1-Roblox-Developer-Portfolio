@@ -1,17 +1,15 @@
 const md = window.markdownit({html:true,linkify:true});
 
-// Icon mappings for different sections
 const iconMap = {
   about: "assets/icons/About.svg",
-  work: "assets/icons/Work.svg",           // Past Work section title
-  workItem: "assets/icons/WorkItem.svg",    // All work item headings use this same icon
+  work: "assets/icons/Work.svg",
+  workItem: "assets/icons/WorkItem.svg",
   skills: "assets/icons/Skills.svg",
   payments: "assets/icons/Payments.svg", 
   links: "assets/icons/Links.svg",
   skill: "assets/icons/skill.svg"
 };
 
-// Local data fallback
 const localData = {
   "name": "1_Techno1",
   "initials": "lys_techno",
@@ -75,7 +73,7 @@ const localData = {
       ]
     }
   ],
-  "skills":["Scripting","UI Design","User Experience","Graphics Design","Animation","Game Design","Programmer","Social Media","Marketing","Development","Modeling","Building"],
+"skills": ["UI Design", "Level Design", "Business Development", "Game Design", "User Experience", "Programmer", "Simulation", "Adventure", "Simulator", "Platformer", "Action", "Minigames", "Role-playing", "Strategy", "Sandbox", "Development", "Idle", "Puzzle", "English", "Scripting", "Git", "Tycoon", "Animation"],
   "payments":[
     {"name": "PayPal", "color": "#0070ba", "icon": "nil"},
     {"name": "Robux", "color": "#a0a0a0", "icon": "nil"},

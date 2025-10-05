@@ -61,7 +61,7 @@
       ]
     }
   ],
-  "skills":["Scripting","UI Design","User Experience","Graphics Design","Animation","Game Design","Programmer","Social Media","Marketing","Development","Modeling","Building"],
+"skills": ["UI Design", "Level Design", "Business Development", "Game Design", "User Experience", "Programmer", "Simulation", "Adventure", "Simulator", "Platformer", "Action", "Minigames", "Role-playing", "Strategy", "Sandbox", "Development", "Idle", "Puzzle", "English", "Scripting", "Git", "Tycoon", "Animation"],
   "payments":[
     {"name": "PayPal", "color": "#0070ba", "icon": "nil"},
     {"name": "Robux", "color": "#a0a0a0", "icon": "nil"},
