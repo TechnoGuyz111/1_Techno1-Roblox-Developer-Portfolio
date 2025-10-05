@@ -32,7 +32,6 @@ html,body{
   padding:0 20px 40px;
 }
 
-/* Profile Section with circular avatar */
 .profile-card{
   display:flex;
   gap:24px;
@@ -73,7 +72,7 @@ html,body{
   margin-top:16px;
 }
 
-/* SVG Icon Color Control - Match Share button color */
+/* SVG Icons */
 .section-icon,
 .link-item img,
 .contact-left img,
@@ -81,7 +80,7 @@ html,body{
   filter: brightness(0) saturate(100%) invert(39%) sepia(98%) saturate(1743%) hue-rotate(202deg) brightness(97%) contrast(96%);
 }
 
-/* Improved Icon Sizing - SLIGHTLY SMALLER */
+/*Icon Sizing */
 .section-title {
   display: flex;
   align-items: center;
@@ -93,7 +92,7 @@ html,body{
 }
 
 .section-title .section-icon {
-  width: 20px !important;  /* Reduced from 26px to 24px */
+  width: 20px !important;
   height: 20px !important;
   flex-shrink: 0;
 }
@@ -108,7 +107,7 @@ html,body{
 }
 
 .work-title .section-icon {
-  width: 20px !important;  /* Reduced from 22px to 20px */
+  width: 20px !important;
   height: 20px !important;
   flex-shrink: 0;
   margin-top: 2px;
@@ -123,7 +122,7 @@ html,body{
 
 .link-item img,
 .contact-left img {
-  width: 15px !important;  /* Reduced from 22px to 20px */
+  width: 15px !important;
   height: 15px !important;
   flex-shrink: 0;
 }
@@ -136,7 +135,7 @@ html,body{
 }
 
 .skill-chip img {
-  width: 10px !important;  /* Reduced from 18px to 16px */
+  width: 10px !important;
   height: 10px !important;
   flex-shrink: 0;
 }
@@ -149,12 +148,11 @@ html,body{
 }
 
 .payment-chip img {
-  width: 10px !important;  /* Reduced from 18px to 16px */
+  width: 10px !important;
   height: 10px !important;
   flex-shrink: 0;
 }
 
-/* Cards with hover effects */
 .card{
   background:var(--card);
   border-radius:16px;
@@ -169,12 +167,10 @@ html,body{
   box-shadow:0 20px 25px -5px rgba(0,0,0,0.3);
 }
 
-/* Section content indentation for ALL sections with icons */
 .section-content {
-  margin-left: 36px; /* Consistent indentation for all section content */
+  margin-left: 36px; 
 }
 
-/* Work list items with proper indentation */
 .work-list{
   display:flex;
   flex-direction:column;
@@ -194,7 +190,6 @@ html,body{
   margin-bottom:16px;
 }
 
-/* Horizontal indentation for work item content */
 .work-meta{
   color:var(--muted);
   font-size:14px;
@@ -209,7 +204,6 @@ html,body{
   line-height:1.6;
 }
 
-/* Media strip with horizontal scrolling and proper indentation */
 .media-strip{
   margin: 16px 0 0 36px;
 }
@@ -276,7 +270,6 @@ html,body{
   transform:translateY(0);
 }
 
-/* Chips for skills and payments */
 .chips{
   display:flex;
   flex-wrap:wrap;
@@ -300,7 +293,6 @@ html,body{
   transform:translateY(-1px);
 }
 
-/* Payment chips - less rounded with colored backgrounds and hover effects */
 .payment-chip{
   border-radius:8px !important;
   border:1px solid;
@@ -331,7 +323,6 @@ html,body{
   z-index:1;
 }
 
-/* Links with external icon */
 .links{
   display:flex;
   flex-direction:column;
@@ -358,7 +349,7 @@ html,body{
   opacity:1;
 }
 
-/* Contact items with values on new lines - CSS ONLY approach */
+/* Contact items*/
 .contacts{
   display:flex;
   flex-direction:column;
@@ -366,7 +357,7 @@ html,body{
 }
 .contact-item{
   display:flex;
-  flex-direction: column; /* Change to column layout */
+  flex-direction: column;
   padding:10px 0;
   border-bottom:1px solid var(--border);
 }
@@ -374,7 +365,7 @@ html,body{
   display:flex;
   align-items:center;
   gap:14px;
-  margin-bottom:4px; /* Space between label and value */
+  margin-bottom:4px;
 }
 .contact-left strong{
   color:var(--text);
@@ -384,12 +375,11 @@ html,body{
 .contact-value{
   color:var(--text-muted);
   font-size:14px;
-  text-align: right; /* Align value to right */
-  margin-left: auto; /* Push to right side */
+  text-align: right;
+  margin-left: auto;
   padding-right: 0;
 }
 
-/* Two column layout with compact skills card */
 .two-col{
   display:grid;
   grid-template-columns:1fr 300px;
@@ -407,7 +397,6 @@ html,body{
   min-height:auto;
 }
 
-/* Modal for full-size media viewing */
 .modal{
   position:fixed;
   inset:0;
@@ -510,7 +499,7 @@ html,body{
   .card{
     padding:20px;
   }
-  /* Remove indentation on mobile for better space usage */
+
   .work-desc,
   .work-meta,
   .media-strip,
@@ -527,7 +516,7 @@ html,body{
     gap:4px;
   }
   .contact-value{
-    margin-left: 34px; /* Align with contact text on mobile */
-    text-align: left; /* Left align on mobile */
+    margin-left: 34px;
+    text-align: left;
   }
 }
