@@ -44,10 +44,8 @@ const localData = {
 			"role": "Scripter • UI Designer • Animator",
 			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for respawning mineable rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
       "media":[
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot System.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot UI.mp4"}
+        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystem.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystemTEST.mp4"}
       ]
     },
     {
@@ -56,10 +54,13 @@ const localData = {
 			"role": "Scripter • UI Designer",
 			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game** inspired by the currently trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops (to name a few). The project represents a fast-paced creative adaptation — transforming a relaxing simulator into a hyperactive experience aligned with current Roblox trends.",
       "media":[
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"},
+        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
+        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotThumbnail1.jpg"},
+        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotMap.png"},
         {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot System.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot UI.mp4"}
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot UI.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"}
       ]
     },
     {
@@ -70,6 +71,26 @@ const localData = {
       "media":[
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/RoLifeIcon.jpg"},
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/BloxPhone1.png"}
+      ]
+    },
+    {
+			"title": "Tower to ???",
+			"date": "2020-04-01",
+			"role": "Lead Scripter • UI Designer",
+			"desc_markdown": "Developing a passion project / personal game where an unknown goal is reached by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).", 
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToThumbnail1.png"}
+      ]
+    },
+    {
+			"title": "Ultimate Tycoon Defense",
+			"date": "2017-011-05",
+			"role": "Lead Scripter • UI Designer",
+			"desc_markdown": "Developing a passion project / personal game based on a fusion of traditional tycoons and tower defense style games", 
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/-2) Ultimate Tycoon Defense/TycoonDefenseIcon1.jpg"},
+        {"type":"image","src":"assets/Past Work Assets/-2) Ultimate Tycoon Defense/TycoonDefenseThumbnail1.png"}
       ]
     }
   ],
@@ -87,7 +108,6 @@ const localData = {
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
     {"title":"Roblox Talent Page","href":"https://create.roblox.com/talent/creators/2228809521"},
-    {"title":"Paypal","href":"https://paypal.me/lystechno7"},
     {"title":"GitHub","href":"https://github.com/technoguyz111"}
   ],
   "contacts":[
