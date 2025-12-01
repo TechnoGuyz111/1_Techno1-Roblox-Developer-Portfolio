@@ -18,92 +18,105 @@ const localData = {
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
   "work": [
     {
-			"title": "Party City!",
-			"date": "2025-08-18",
-			"role": "Scripter • UI Designer • Animator",
-			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - and various event types.",
-       "media":[
-        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/5) Minigames/MinigamesVotingSystem.mp4"}
-      ]
-    },
-    {
-			"title": "[Commission] Crate System",
-			"date": "2025-08-17",
-			"role": "Scripter • UI Designer",
-			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional gamepasses for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools, all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
-       "media":[
-        {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderBoard.mp4"}
-      ]
-    },
-    {
-			"title": "[Commission] Mining System",
-			"date": "2025-08-16",
-			"role": "Scripter • UI Designer • Animator",
-			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** (dust and shake effects) on impact, **Respawn logic** for respawning mineable rocks (configurable 5–10 second delay), **Damage scaling** based on pickaxe quality and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
+		  "title": "Capture It!",
+			"date": "2025-09-27",
+			"role": "Lead UI Designer",
+			"desc_markdown": "Contributed for an ongoing role at ***Capture It!***, involving **UI layout adjustments, refinements, and minor redesigns** for a Roblox experience in active development. Tasks include **repositioning interface elements, optimizing visual hierarchy, and improving usability** of existing UI assets in Roblox Studio, designed and imported from design software such as **Inkscape**, **Canva** and **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for new features, ensuring consistency with the game's established style. Work is **task-based**, emphasizing **speed, accuracy, and adaptability** across various small-scale interface implementations.",
       "media":[
-        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystem.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystemTEST.mp4"}
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-LeftUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-DailyRewardsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-TradingList.png"},
+	      {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-TradingUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-SettingsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-InventoryUI.png"},
+	      {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-NotificationsUI.png"}
       ]
     },
     {
-			"title": "Fish and Steal A Brainrot",
-			"date": "2025-08-04",
-			"role": "Scripter • UI Designer",
-			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game** inspired by the currently trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops (to name a few). The project represents a fast-paced creative adaptation — transforming a relaxing simulator into a hyperactive experience aligned with current Roblox trends.",
+		  "title": "Tower to ???",
+			"date": "2020-05-1",
+			"role": "Lead Developer",
+			"desc_markdown": "Developing a passion project / personal game where players reach an unknown level by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
-        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotThumbnail1.jpg"},
-        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot System.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot UI.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
-        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"}
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
+        {"type":"video","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.mp4"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-GameUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-CoinsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-PassesUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-DailyQuestsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-MainQuestsUI.png"}
       ]
     },
     {
-			"title": "RoLife: Realities",
+		  "title": "RoLife: Realities",
 			"date": "2025-08-04",
-			"role": "UI Designer",
-			"desc_markdown": "Contributed to **RoLife: Realities**, an ambitious next-generation **realistic life simulator** on Roblox developed by Rubosano Studios. Worked on **core gameplay systems**, including in-game devices, **economy mechanics**, and **UI interfaces** such as phones and social apps. The project aimed to create a deeply immersive world featuring **player-owned businesses**, **dynamic social platforms (RoTube, RoGram, RoChat)**, **sports leagues**, **pets**, and **aging systems**, all within a large open-world city.", 
+			"role": "Lead UI Designer",
+			"desc_markdown": "Contributed to **RoLife: Realities**, an ambitious, next-generation **realistic life simulator** on Roblox, developed by Rubosano Studios. Worked on **core gameplay systems**, including in-game devices, **economy mechanics**, and **UI interfaces** such as phones and social apps. The project aimed to create a deeply immersive, roleplay world, featuring **player-owned businesses**, **dynamic social platforms (RoTube, RoGram, RoChat)**, **sports leagues**, **pets**, **aging systems**, and more; all within a large open-world city.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/RoLifeIcon.jpg"},
         {"type":"image","src":"assets/Past Work Assets/1) RoLife Realities/BloxPhone1.png"}
       ]
     },
     {
-			"title": "Tower to ???",
-			"date": "2020-04-01",
-			"role": "Lead Scripter • UI Designer",
-			"desc_markdown": "Developing a passion project / personal game where an unknown goal is reached by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).", 
+		  "title": "Fish and Steal A Brainrot",
+			"date": "2025-08-10",
+			"role": "Scripter • UI Designer • Animator",
+			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToThumbnail1.png"}
+        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
+        {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotMap.png"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (PC).mp4"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fishing Simulator Start GUI (Mobile).mp4"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot System.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/2) Fish a Brainrot/Fish a Brainrot UI.mp4"}
       ]
     },
     {
-			"title": "Ultimate Tycoon Defense",
-			"date": "2017-011-05",
-			"role": "Lead Scripter • UI Designer",
-			"desc_markdown": "Developing a passion project / personal game based on a fusion of traditional tycoons and tower defense style games", 
+		  "title": "[Commission] Mining System",
+			"date": "2025-08-16",
+			"role": "Scripter • UI Designer • Animator",
+			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** with dust and shake effects on impact, **Respawn logic** for respawning mineable rocks complete with a configurable 5–10 second delay, **Damage scaling** based on pickaxe quality, and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/-2) Ultimate Tycoon Defense/TycoonDefenseIcon1.jpg"},
-        {"type":"image","src":"assets/Past Work Assets/-2) Ultimate Tycoon Defense/TycoonDefenseThumbnail1.png"}
+        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystem.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystemTEST.mp4"}
+      ]
+    },
+    {
+		  "title": "[Commission] Crate System",
+			"date": "2025-08-17",
+			"role": "Scripter • UI Designer",
+			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderboard.mp4"},
+	      {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemGamepass.png"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"}
+      ]
+    },
+    {
+		  "title": "Party City!",
+			"date": "2025-08-18",
+			"role": "Scripter • UI Design • Animator",
+			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - as well as various in-game special events for a balance of quality of life for player engagement.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesVoting.png"},
+        {"type":"video","src":"assets/Past Work Assets/5) Minigames/MinigamesVotingSystem.mp4"},
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesTeleport.png"}
       ]
     }
   ],
 "skills": ["UI Design", "Level Design", "Business Development", "Game Design", "User Experience", "Programmer", "Simulation", "Adventure", "Simulator", "Platformer", "Action", "Minigames", "Role-playing", "Strategy", "Sandbox", "Development", "Idle", "Puzzle", "English", "Scripting", "Git", "Tycoon", "Animation"],
   "payments":[
-    {"name": "PayPal", "color": "#0070ba", "icon": "nil"},
-    {"name": "Robux", "color": "#a0a0a0", "icon": "nil"},
-    {"name": "Percentages", "color": "#627eea", "icon": "nil"},
-    {"name": "Bitcoin", "color": "#f7931a", "icon": "nil"},
-    {"name": "Venmo", "color": "#008CFF", "icon": "nil"},
-    {"name": "CashApp", "color": "#00D632", "icon":"nil"},
-    {"name": "Bank Transfer", "color": "#deaeaf", "icon": "nil"},
-    {"name": "Giftcards", "color": "#FF5A5F", "icon": "nil"}
+    {"name": "PayPal", "color": "#0070ba", "icon": "assets/icons/payments/Paypal.svg"},
+    {"name": "Robux", "color": "#a0a0a0", "icon": "assets/icons/payments/Robux.svg"},
+    {"name": "Percentages", "color": "#627eea", "icon": "assets/icons/payments/Percentages.svg"},
+    {"name": "Bitcoin", "color": "#f7931a", "icon": "assets/icons/payments/Bitcoin.svg"},
+    {"name": "Venmo", "color": "#008CFF", "icon": "assets/icons/payments/Venmo.svg"},
+    {"name": "CashApp", "color": "#00D632", "icon":"assets/icons/payments/Cashapp.svg"},
+    {"name": "Bank Transfer", "color": "#deaeaf", "icon": "assets/icons/payments/BankTransfer.svg"},
+    {"name": "Giftcards", "color": "#FF5A5F", "icon": "assets/icons/payments/Giftcards.svg"}
   ],
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},

@@ -1,4 +1,12 @@
-			"title": "Party City!",
+    {
+		"title": "Party City!",
 			"date": "2025-08-18",
 			"role": "Scripter • UI Design • Animator",
-			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - and various event types.",
+			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - as well as various in-game special events for a balance of quality of life for player engagement.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesVoting.png"},
+        {"type":"video","src":"assets/Past Work Assets/5) Minigames/MinigamesVotingSystem.mp4"},
+        {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesTeleport.png"}
+      ]
+    }

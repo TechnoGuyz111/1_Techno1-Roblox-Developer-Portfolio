@@ -1,0 +1,15 @@
+    {
+		"title": "Capture It!",
+			"date": "2025-09-27",
+			"role": "Lead UI Designer",
+			"desc_markdown": "Contributed for an ongoing role at ***Capture It!***, involving **UI layout adjustments, refinements, and minor redesigns** for a Roblox experience in active development. Tasks include **repositioning interface elements, optimizing visual hierarchy, and improving usability** of existing UI assets in Roblox Studio, designed and imported from design software such as **Inkscape**, **Canva** and **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for new features, ensuring consistency with the game's established style. Work is **task-based**, emphasizing **speed, accuracy, and adaptability** across various small-scale interface implementations.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-LeftUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-DailyRewardsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-TradingList.png"},
+	      {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-TradingUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-SettingsUI.png"},
+        {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-InventoryUI.png"},
+	      {"type":"image","src":"assets/Past Work Assets/6) UI Tasks/UITasks-NotificationsUI.png"}
+      ]
+    },

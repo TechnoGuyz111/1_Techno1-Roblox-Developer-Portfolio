@@ -148,8 +148,8 @@ html,body{
 }
 
 .payment-chip img {
-  width: 10px !important;
-  height: 10px !important;
+  width: 15px !important;
+  height: 15px !important;
   flex-shrink: 0;
 }
 
