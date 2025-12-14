@@ -1,8 +1,8 @@
 {
-  "name": "1_Techno1",
+  "name": "Hi, I'm 1_Techno1!",
   "initials": "lys_techno",
   "avatar": "assets/images/avatar.jpg",
-  "tagline": "Roblox Developer • Lua Scripter • UI/UX Designer",
+  "tagline": "A Roblox Developer • Lua Scripter and a UI/UX Designer",
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
   "work": [
     {
@@ -77,7 +77,7 @@
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderboard.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderBoard.mp4"},
 	      {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemGamepass.png"},
         {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"}
       ]

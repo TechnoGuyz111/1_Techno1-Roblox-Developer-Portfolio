@@ -11,10 +11,10 @@ const iconMap = {
 };
 
 const localData = {
-  "name": "1_Techno1",
+  "name": "Hi, I'm 1_Techno1!",
   "initials": "lys_techno",
   "avatar": "assets/images/avatar.jpg",
-  "tagline": "Roblox Developer • Lua Scripter • UI/UX Designer",
+  "tagline": "A Roblox Developer • Lua Scripter and a UI/UX Designer",
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
   "work": [
     {
@@ -89,7 +89,7 @@ const localData = {
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderboard.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderBoard.mp4"},
 	      {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemGamepass.png"},
         {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"}
       ]
@@ -170,6 +170,21 @@ function createIcon(iconPath, alt = "", size = "20px") {
   return icon;
 }
 
+// Special createIcon for payment chips (no color filter)
+function createPaymentIcon(iconPath, alt = "", size = "20px") {
+  const icon = document.createElement('img');
+  icon.src = iconPath;
+  icon.alt = alt;
+  icon.className = 'payment-icon'; // Different class for CSS targeting
+  icon.style.width = size;
+  icon.style.height = size;
+  icon.style.flexShrink = '0';
+  icon.onerror = function() {
+    this.style.display = 'none';
+  };
+  return icon;
+}
+
 function buildProfile(data){
   document.getElementById('name').textContent = data.name;
   document.getElementById('tagline').textContent = data.tagline || '';
@@ -235,7 +250,7 @@ function buildWork(data){
   // Add icon to Past Work section title
   const workTitle = document.querySelector('#work-card .section-title');
   workTitle.innerHTML = '';
-  workTitle.appendChild(createIcon(iconMap.work, "Past Work icon")); // Uses work icon
+  workTitle.appendChild(createIcon(iconMap.work, "Past Work icon"));
   workTitle.appendChild(document.createTextNode('Past work'));
   
   const list = document.getElementById('work-list'); 
@@ -248,7 +263,7 @@ function buildWork(data){
     // Work item header with icon
     const header = el('div', 'work-header');
     const title = el('h3', 'work-title');
-    title.appendChild(createIcon(iconMap.workItem, "Project icon", "22px")); // Uses workItem icon
+    title.appendChild(createIcon(iconMap.workItem, "Project icon", "22px"));
     title.appendChild(document.createTextNode(w.title || 'Untitled'));
     
     const meta = el('div', 'work-meta', `${formatDate(w.date || '')} • ${w.role || ''}`);
@@ -260,12 +275,15 @@ function buildWork(data){
     left.appendChild(header);
     left.appendChild(desc);
 
+    // Media with horizontal scroll and ASPECT RATIO WRAPPER
     if(Array.isArray(w.media) && w.media.length){
       const strip = el('div', 'media-strip');
       const scrollContainer = el('div', 'media-scroll-container');
       
       w.media.forEach(m => {
         const mediaItem = el('div', 'media-item');
+        const aspectContainer = el('div', 'aspect-container'); // Aspect ratio wrapper
+        
         if(m.type === 'image'){
           const img = el('img'); 
           img.src = m.src; 
@@ -275,8 +293,11 @@ function buildWork(data){
             console.error('Failed to load image:', m.src);
             this.style.display = 'none';
           };
-          img.addEventListener('click', () => openModal('image', m.src));
-          mediaItem.appendChild(img);
+          // Store source for modal
+          img.dataset.src = m.src;
+          // Add click handler to the aspect container
+          aspectContainer.addEventListener('click', () => openModal('image', m.src));
+          aspectContainer.appendChild(img);
         } else if(m.type === 'video'){
           const vid = el('video'); 
           vid.controls = true; 
@@ -285,14 +306,21 @@ function buildWork(data){
             console.error('Failed to load video:', m.src);
           };
           if(m.poster) vid.poster = m.poster;
-          mediaItem.appendChild(vid);
+          // Store source for modal
+          vid.dataset.src = m.src;
+          // Add click handler to the aspect container
+          aspectContainer.addEventListener('click', () => openModal('video', m.src));
+          aspectContainer.appendChild(vid);
         } else if(m.type === 'embed'){
           const frame = el('iframe'); 
           frame.src = m.src; 
           frame.loading = 'lazy'; 
           frame.allow = 'autoplay; fullscreen';
-          mediaItem.appendChild(frame);
+          aspectContainer.appendChild(frame);
+          // Note: iframes usually don't need modal since they're interactive
         }
+        
+        mediaItem.appendChild(aspectContainer);
         scrollContainer.appendChild(mediaItem);
       });
       
@@ -332,19 +360,19 @@ function buildSide(data){
     skills.appendChild(chip);
   });
 
-  // Payments with icons, colored backgrounds, and hover effects
+  // Payments with icons - using createPaymentIcon to avoid color filter
   const payments = document.getElementById('payments'); 
   payments.innerHTML = '';
   (data.payments || []).forEach(p => {
     const chip = el('div', 'chip payment-chip');
     
     // Set base color with transparency
-    chip.style.backgroundColor = `${p.color}20`; // 20 = ~12% opacity in hex
+    chip.style.backgroundColor = `${p.color}20`;
     chip.style.color = p.color;
-    chip.style.borderColor = `${p.color}40`; // 40 = ~25% opacity
+    chip.style.borderColor = `${p.color}40`;
     
-    // Add icon
-    chip.appendChild(createIcon(p.icon || iconMap.payments, `${p.name} icon`, "16px"));
+    // Add icon WITHOUT color filter
+    chip.appendChild(createPaymentIcon(p.icon || iconMap.payments, `${p.name} icon`, "16px"));
     chip.appendChild(document.createTextNode(p.name || p));
     
     // Store color for hover effect
@@ -391,6 +419,7 @@ function openModal(type, src){
   if(type === 'image'){
     const img = document.createElement('img'); 
     img.src = src; 
+    img.alt = 'Expanded view';
     modalMedia.appendChild(img);
   } else if(type === 'embed'){
     const iframe = document.createElement('iframe'); 

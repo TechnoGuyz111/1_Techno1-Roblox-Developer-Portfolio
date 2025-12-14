@@ -10,10 +10,6 @@
   --border:#334155;
   --glass: rgba(255,255,255,0.05);
   --shadow: 0 10px 15px -3px rgba(0,0,0,0.3), 0 4px 6px -2px rgba(0,0,0,0.1);
-  --work-icon-size: 18px;
-  --section-icon-size: 22px;
-  --icon-gap: 14px;
-  --extra-spacing: 4px;
 }
 
 *{box-sizing:border-box}
@@ -72,12 +68,17 @@ html,body{
   margin-top:16px;
 }
 
-/* SVG Icons */
+/* SVG Icon Color Control */
 .section-icon,
 .link-item img,
 .contact-left img,
 .work-title img {
   filter: brightness(0) saturate(100%) invert(39%) sepia(98%) saturate(1743%) hue-rotate(202deg) brightness(97%) contrast(96%);
+}
+
+/* EXCEPTION: Payment chip icons keep original color */
+.payment-chip img {
+  filter: none !important;
 }
 
 /*Icon Sizing */
@@ -226,23 +227,43 @@ html,body{
   background:var(--accent);
   border-radius:3px;
 }
-.media-item{
-  flex-shrink:0;
+
+/* ASPECT RATIO FIX */
+.media-item {
+  flex-shrink: 0;
+  width: 280px;
 }
-.media-item img,
-.media-item video,
-.media-item iframe{
-  width:280px;
-  height:160px;
-  border-radius:8px;
-  object-fit:cover;
-  border:1px solid var(--border);
-  transition:all 0.2s ease;
+
+/* Aspect ratio container */
+.media-item .aspect-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: transparent;
+  cursor: pointer;
 }
-.media-item img:hover,
-.media-item video:hover{
-  transform:scale(1.02);
-  border-color:var(--accent);
+
+/* Media inside aspect container */
+.media-item .aspect-container img,
+.media-item .aspect-container video,
+.media-item .aspect-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.media-item .aspect-container:hover img,
+.media-item .aspect-container:hover video {
+  transform: scale(1.02);
+  border-color: var(--accent);
 }
 
 /* Buttons */
@@ -397,14 +418,15 @@ html,body{
   min-height:auto;
 }
 
+/* MODAL BACKGROUND FIX */
 .modal{
   position:fixed;
   inset:0;
   display:flex;
   align-items:center;
   justify-content:center;
-  background:rgba(15, 23, 42, 0.9);
-  backdrop-filter:blur(4px);
+  background:rgba(15, 23, 42, 0.95);
+  backdrop-filter:blur(8px);
   z-index:60;
   padding:20px;
 }
@@ -413,40 +435,67 @@ html,body{
 }
 .modal-inner{
   width:min(900px,100%);
-  background:var(--card);
-  padding:20px;
+  background:transparent !important;
+  padding:0;
   border-radius:16px;
   position:relative;
-  border:1px solid var(--border);
-  box-shadow:var(--shadow);
+  border:none;
+  box-shadow:none;
 }
+
+/* Modal media - no background */
+.modal-media {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-media img,
-.modal-media video,
-.modal-media iframe{
-  width:100%;
-  height:auto;
-  max-height:70vh;
-  border-radius:8px;
+.modal-media video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  display: block;
+  background: transparent !important;
+  object-fit: contain;
 }
+
+.modal-media iframe {
+  width: 100%;
+  height: 70vh;
+  border-radius: 12px;
+  border: none;
+  background: transparent !important;
+}
+
 .btn-close{
   position:absolute;
-  right:16px;
-  top:16px;
-  background:transparent;
-  border:0;
-  color:var(--muted);
-  font-size:28px;
-  cursor:pointer;
-  width:32px;
-  height:32px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:6px;
+  right: 20px;
+  top: 20px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 28px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 70;
 }
 .btn-close:hover{
-  background:var(--glass);
-  color:var(--text);
+  background: var(--accent);
+  color: white;
 }
 
 /* Footer */
@@ -490,12 +539,15 @@ html,body{
     padding:0 16px 30px;
     margin:30px auto;
   }
-  .media-item img,
-  .media-item video,
-  .media-item iframe{
-    width:240px;
-    height:135px;
+  
+  /* Mobile aspect ratio */
+  .media-item {
+    width: 240px;
   }
+  .media-item .aspect-container {
+    padding-top: 56.25%; /* Same 16:9 ratio */
+  }
+  
   .card{
     padding:20px;
   }
