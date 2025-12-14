@@ -12,10 +12,10 @@ const iconMap = {
 
 const localData = {
   "name": "Hi, I'm 1_Techno1!",
-  "initials": "lys_techno",
+  "initials": "a.k.a lys_techno",
   "avatar": "assets/images/avatar.jpg",
   "tagline": "A Roblox Developer • Lua Scripter and a UI/UX Designer",
-  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website!",
+  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
     {
 		  "title": "Capture It!",
@@ -46,6 +46,17 @@ const localData = {
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-PassesUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-DailyQuestsUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-MainQuestsUI.png"}
+      ]
+    },
+    {
+		  "title": "[Commission] Tutorial UI",
+			"date": "2025-12-03",
+			"role": "Lead UI Designer",
+			"desc_markdown": "Contributed to a role in an ***Anomaly*** based game, inspired by ***Exit 8***, involving **Tutorial UI** creation for a Roblox experience in beta development. Tasks included **designing and importing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of existing UI assets in Roblox Studio, designed and imported from the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, ensuring consistency with the game's established style. Work was **task-based**, emphasizing **speed, accuracy, and adaptability** across various small-scale interface implementations.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/7) Anomaly game/Tutorial1.png"},
+        {"type":"image","src":"assets/Past Work Assets/7) Anomaly game/Tutorial2.png"},
+	      {"type":"image","src":"assets/Past Work Assets/7) Anomaly game/Tutorial3.png"}
       ]
     },
     {
