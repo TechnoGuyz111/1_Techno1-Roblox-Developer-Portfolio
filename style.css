@@ -370,6 +370,44 @@ html,body{
   opacity:1;
 }
 
+/* Specific styling for work card links */
+.work-desc a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 500;
+  border-bottom: 1px dotted var(--accent);
+}
+
+.work-desc a:hover {
+  border-bottom: 1px solid var(--accent-hover);
+  color: var(--accent-hover);
+  text-decoration: none;
+}
+
+/* SVG external link icon for work cards */
+.work-desc a[href^="http"]::after,
+.bio-html a[href^="http"]::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233b82f6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+/* Color change on hover */
+.work-desc a[href^="http"]:hover::after,
+.bio-html a[href^="http"]:hover::after {
+  opacity: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E");
+}
+
 /* Contact items*/
 .contacts{
   display:flex;
