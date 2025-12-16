@@ -127,7 +127,7 @@ const localData = {
     {"name": "Venmo", "color": "#008CFF", "icon": "assets/icons/payments/Venmo.svg"},
     {"name": "CashApp", "color": "#00D632", "icon":"assets/icons/payments/Cashapp.svg"},
     {"name": "Bank Transfer", "color": "#deaeaf", "icon": "assets/icons/payments/BankTransfer.svg"},
-    {"name": "Giftcards", "color": "#FF5A5F", "icon": "assets/icons/payments/Giftcards.svg"}
+    {"name": "Giftcards", "color": "#EAB308", "icon": "assets/icons/payments/Giftcards.svg"}
   ],
   "links":[
     {"title":"RoDevs Portfolio","href":"https://rodevs.com/portfolios/1002264644515278909"},
