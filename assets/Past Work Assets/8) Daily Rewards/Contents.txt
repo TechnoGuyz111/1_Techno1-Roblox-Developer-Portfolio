@@ -1,0 +1,8 @@
+    {
+		"title": "[Commission] Daily Rewards UI",
+			"date": "2025-12-8",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed to a role in an upcoming ***Tycoon*** themed game, involving **Daily Rewards UI** design for a Roblox experience in beta development. Tasks included **designing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, for consistency with the game's themed style.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}      ]
+    }

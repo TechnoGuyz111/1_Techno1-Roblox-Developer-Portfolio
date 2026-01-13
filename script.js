@@ -18,6 +18,14 @@ const localData = {
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
     {
+		"title": "[Commission] Daily Rewards UI",
+			"date": "2025-12-8",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed to a role in an upcoming ***Tycoon*** themed game, involving **Daily Rewards UI** design for a Roblox experience in beta development. Tasks included **designing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, for consistency with the game's themed style.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}      ]
+    },    
+    {
 		  "title": "Capture It!",
 			"date": "2025-09-27",
 			"role": "Lead UI Designer",
@@ -33,7 +41,7 @@ const localData = {
       ]
     },
     {
-		  "title": "Tower to ???",
+		"title": "Tower to ???",
 			"date": "2020-05-1",
 			"role": "Lead Developer",
 			"desc_markdown": "Developing a passion project / personal game where players reach an unknown level by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).",
@@ -44,8 +52,7 @@ const localData = {
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-GameUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-CoinsUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-PassesUI.png"},
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-DailyQuestsUI.png"},
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-MainQuestsUI.png"}
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-AllQuestsUI.png"}
       ]
     },
     {
@@ -72,7 +79,7 @@ const localData = {
     {
 		  "title": "Fish and Steal A Brainrot",
 			"date": "2025-08-10",
-			"role": "Scripter • UI Designer • Animator",
+			"role": "Scripter / UI Designer / Animator",
 			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
@@ -86,7 +93,7 @@ const localData = {
     {
 		  "title": "[Commission] Mining System",
 			"date": "2025-08-16",
-			"role": "Scripter • UI Designer • Animator",
+			"role": "Scripter / UI Designer / Animator",
 			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** with dust and shake effects on impact, **Respawn logic** for respawning mineable rocks complete with a configurable 5–10 second delay, **Damage scaling** based on pickaxe quality, and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
       "media":[
         {"type":"video","src":"assets/Past Work Assets/3) Mining System/MiningSystem.mp4"},
@@ -96,7 +103,7 @@ const localData = {
     {
 		  "title": "[Commission] Crate System",
 			"date": "2025-08-17",
-			"role": "Scripter • UI Designer",
+			"role": "Scripter / UI Designer",
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
@@ -108,7 +115,7 @@ const localData = {
     {
 		  "title": "Party City!",
 			"date": "2025-08-18",
-			"role": "Scripter • UI Design • Animator",
+			"role": "Scripter / UI Design / Animator",
 			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - as well as various in-game special events for a balance of quality of life for player engagement.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},

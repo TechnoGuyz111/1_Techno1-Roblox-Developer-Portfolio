@@ -10,7 +10,6 @@
 	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-GameUI.png"},
 	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-CoinsUI.png"},
 	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-PassesUI.png"},
-	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-DailyQuestsUI.png"},
-	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-MainQuestsUI.png"}
+	{"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-AllQuestsUI.png"}
       ]
     }
