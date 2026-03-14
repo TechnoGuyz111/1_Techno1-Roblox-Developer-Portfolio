@@ -1,16 +1,6 @@
 const md = window.markdownit({html:true,linkify:true});
 
 const iconMap = {
-  about: "assets/icons/About.svg",
-  work: "assets/icons/Work.svg",
-  workItem: "assets/icons/WorkItem.svg",
-  skills: "assets/icons/Skills.svg",
-  payments: "assets/icons/Payments.svg", 
-  links: "assets/icons/Links.svg",
-  skill: "assets/icons/skill.svg"
-};
-
-const localData = {
   "name": "Hi, I'm 1_Techno1!",
   "initials": "a.k.a lys_techno",
   "avatar": "assets/images/avatar.jpg",
@@ -18,12 +8,26 @@ const localData = {
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
     {
+		"title": "Meowlu's World",
+			"date": "2026-01-21",
+			"role": "Lead Scripter / UI Designer",
+			"desc_markdown": "Contributed for an ongoing programming role, involving **backend scripting**, **UI integration**, and gameplay refinements for a Roblox experience in active development. Tasks include programming custom mechanics and configuring **DataStores** for player progression in **Roblox Studio**. Responsibilities extend to developing full-stack gameplay systems—specifically an *RNG Fishing minigame*, a *hitbox-based Mining system*, and *custom Inventory item stacking*—alongside fully scripting **interactive UIs**, including the Inventory (FishDex/StoneDex), monetized Shop, Daily Login, Emotes, Settings, Help, Join Group, and Add Friends menus. Work is *task-based*, emphasizing **modular scripting**, speed, and adaptability across various complex system implementations.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 43.png"},
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 44.png"},
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 45.png"},
+        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid7.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid8.mp4"}
+      ]
+    },    
+    {
 		"title": "[Commission] Daily Rewards UI",
 			"date": "2025-12-8",
 			"role": "UI Designer",
 			"desc_markdown": "Contributed to a role in an upcoming ***Tycoon*** themed game, involving **Daily Rewards UI** design for a Roblox experience in beta development. Tasks included **designing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, for consistency with the game's themed style.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}      ]
+        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}
+      ]
     },    
     {
 		  "title": "Capture It!",
