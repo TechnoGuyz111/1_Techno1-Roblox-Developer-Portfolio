@@ -1,8 +1,8 @@
     {
 		"title": "Fish and Steal A Brainrot",
 			"date": "2025-08-10",
-			"role": "Scripter • UI Designer • Animator",
-			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
+			"role": "Scripter / UI Designer / Animator",
+			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems, from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
         {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotMap.png"},

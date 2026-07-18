@@ -1,0 +1,8 @@
+    {
+		"title": "[COMMISSION] Football Match HUD UI",
+			"date": "2026-07-17",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed to a short design role, involving making a **Figma** frame for an **in-game HUD** as part of a **Blue Lock inspired** UI. Tasks include uploading *image and text assets* at **maximum resolution** and retaining **scalable** and *clearly defined hierarchical* structure of vectors in Figma. Responsibilities extend to developing a full frame; specifically an in-game HUD UI, featuring usage of *timers, team colour labels, skill buttons, and a flow bar*; making the frame fully prepared for **responsive animation** and integration into a full game system to increase *experience retention during its core gameplay loop*.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/11) BlueLockUI/Frame-1.png"}      ]
+    }

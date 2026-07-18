@@ -1,5 +1,5 @@
     {
-		"title": "[Commission] Tutorial UI",
+		"title": "[COMMISSION] Tutorial UI",
 			"date": "2025-12-03",
 			"role": "Lead UI Designer",
 			"desc_markdown": "Contributed to a role in an ***Anomaly*** based game, inspired by ***Exit 8***, involving **Tutorial UI** creation for a Roblox experience in beta development. Tasks included **designing and importing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of existing UI assets in Roblox Studio, designed and imported from the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, ensuring consistency with the game's established style. Work was **task-based**, emphasizing **speed, accuracy, and adaptability** across various small-scale interface implementations.",

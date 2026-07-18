@@ -1,0 +1,8 @@
+    {
+		"title": "[COMMISSION] UI Figma-to-Roblox Imports",
+			"date": "2026-07-15",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed for a small importing role, involving **converting** a **Figma** UI design into a **Roblox Studio** frame for a *Dev server* as part of a series of *trial tasks*. Tasks include uploading *image and text assets* at *maximum resolution and retaining scalable and clearly defined hierarchical UI objects in Roblox Studio*. Responsibilities extend to developing a full frame; specifically a **Battle Pass UI**, featuring usage of **tiers, levels, and premium benefits**; making the frame fully prepared for *responsive animation and integration into a full game system* to increase experience *retention* and **monetisation**.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/10) FigmaImport/Frame.jpg"}      ]
+    }

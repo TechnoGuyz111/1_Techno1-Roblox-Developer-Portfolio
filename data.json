@@ -6,27 +6,37 @@
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
     {
-		"title": "Meowlu's World",
+		  "title": "[COMMISSION] Football Match HUD UI",
+			"date": "2026-07-17",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed to a short design role, involving making a **Figma** frame for an **in-game HUD** as part of a **Blue Lock inspired** UI. Tasks include uploading *image and text assets* at **maximum resolution** and retaining **scalable** and *clearly defined hierarchical* structure of vectors in Figma. Responsibilities extend to developing a full frame; specifically an in-game HUD UI, featuring usage of *timers, team colour labels, skill buttons, and a flow bar*; making the frame fully prepared for **responsive animation** and integration into a full game system to increase *experience retention during its core gameplay loop*.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/11) BlueLockUI/Frame-1.png"}      ]
+    },
+    {
+		  "title": "[COMMISSION] UI Figma-to-Roblox Imports",
+			"date": "2026-07-15",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed for a small importing role, involving **converting** a **Figma** UI design into a **Roblox Studio** frame for a *Dev server* as part of a series of *trial tasks*. Tasks include uploading *image and text assets* at *maximum resolution and retaining scalable and clearly defined hierarchical UI objects in Roblox Studio*. Responsibilities extend to developing a full frame; specifically a **Battle Pass UI**, featuring usage of **tiers, levels, and premium benefits**; making the frame fully prepared for *responsive animation and integration into a full game system* to increase experience *retention* and **monetisation**.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/10) FigmaImport/Frame.jpg"}      ]
+    },
+    {
+		  "title": "Meowlu's World",
 			"date": "2026-01-21",
 			"role": "Lead Scripter / UI Designer",
-			"desc_markdown": "Contributed for an ongoing programming role, involving **backend scripting**, **UI integration**, and gameplay refinements for a Roblox experience in active development. Tasks include programming custom mechanics and configuring **DataStores** for player progression in **Roblox Studio**. Responsibilities extend to developing full-stack gameplay systems—specifically an *RNG Fishing minigame*, a *hitbox-based Mining system*, and *custom Inventory item stacking*—alongside fully scripting **interactive UIs**, including the Inventory (FishDex/StoneDex), monetized Shop, Daily Login, Emotes, Settings, Help, Join Group, and Add Friends menus. Work is *task-based*, emphasizing **modular scripting**, speed, and adaptability across various complex system implementations.",
+			"desc_markdown": "Contributed for an ongoing programming role, involving backend scripting, UI integration, and gameplay refinements for a Roblox experience in active development. Tasks include programming custom mechanics and configuring DataStores for player progression in Roblox Studio. Responsibilities extend to developing full-stack gameplay systems; specifically an RNG Fishing minigame, a hitbox-based Mining system, and custom Inventory item stacking, alongside fully scripting interactive UIs, including the Inventory (FishDex/StoneDex), monetized Shop, Daily Login, Emotes, Settings, Help, Join Group, and Add Friends menus. Work is task-based, emphasizing modular scripting, speed, and adaptability across various complex system implementations.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 43.png"},
-        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 44.png"},
-        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 45.png"},
-        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid7.mp4"},
-        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid8.mp4"}
-      ]
-    },    
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/"}      ]
+    },  
     {
-		"title": "[Commission] Daily Rewards UI",
+		  "title": "[COMMISSION] Daily Rewards UI",
 			"date": "2025-12-8",
 			"role": "UI Designer",
 			"desc_markdown": "Contributed to a role in an upcoming ***Tycoon*** themed game, involving **Daily Rewards UI** design for a Roblox experience in beta development. Tasks included **designing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, for consistency with the game's themed style.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}
-      ]
-    },    
+        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}      ]
+    },   
     {
 		  "title": "Capture It!",
 			"date": "2025-09-27",
@@ -43,13 +53,13 @@
       ]
     },
     {
-		"title": "Tower to ???",
+		  "title": "Tower to ???",
 			"date": "2020-05-1",
 			"role": "Lead Developer",
 			"desc_markdown": "Developing a passion project / personal game where players reach an unknown level by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
-        {"type":"video","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.mp4"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-GameUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-CoinsUI.png"},
@@ -58,7 +68,7 @@
       ]
     },
     {
-		  "title": "[Commission] Tutorial UI",
+		  "title": "[COMMISSION] Tutorial UI",
 			"date": "2025-12-03",
 			"role": "Lead UI Designer",
 			"desc_markdown": "Contributed to a role in an ***Anomaly*** based game, inspired by ***Exit 8***, involving **Tutorial UI** creation for a Roblox experience in beta development. Tasks included **designing and importing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of existing UI assets in Roblox Studio, designed and imported from the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, ensuring consistency with the game's established style. Work was **task-based**, emphasizing **speed, accuracy, and adaptability** across various small-scale interface implementations.",
@@ -82,7 +92,7 @@
 		  "title": "Fish and Steal A Brainrot",
 			"date": "2025-08-10",
 			"role": "Scripter / UI Designer / Animator",
-			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems - from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
+			"desc_markdown": "Initially began as **Fisherman’s Dream**, a classic **fishing simulator**, but pivoted mid-development into a **'brainrot-style' game**, inspired by the trending Roblox genre. Contributed as **Scripter and UI Designer**, completing multiple gameplay and interface systems, from completing custom animations, plot management, fishing, and DataStore-saved placement systems, to in-game UIs ranging from player HUDs, Indexes, and Shops, to name a few. The project represents a fast-paced creative adaptation; transforming a relaxing simulator into a hyperactive experience aligned with Roblox trends.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotIcon1.png"},
         {"type":"image","src":"assets/Past Work Assets/2) Fish a Brainrot/FishABrainrotMap.png"},
@@ -93,7 +103,7 @@
       ]
     },
     {
-		  "title": "[Commission] Mining System",
+	  	"title": "[COMMISSION] Mining System",
 			"date": "2025-08-16",
 			"role": "Scripter / UI Designer / Animator",
 			"desc_markdown": "Developed a **fully modular mining system** commissioned for use in a sandbox-style building and crafting game. Designed for easy integration and configuration across multiple maps and assets, **Interactive mining mechanics** with hit detection and rock health tracking, **VFX feedback** with dust and shake effects on impact, **Respawn logic** for respawning mineable rocks complete with a configurable 5–10 second delay, **Damage scaling** based on pickaxe quality, and upgrade level: all delivered as a clean, efficient module with reusable configuration options for future expansion.",
@@ -103,13 +113,13 @@
       ]
     },
     {
-		  "title": "[Commission] Crate System",
+		  "title": "[COMMISSION] Crate System",
 			"date": "2025-08-17",
 			"role": "Scripter / UI Designer",
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderBoard.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderboard.mp4"},
 	      {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemGamepass.png"},
         {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"}
       ]
@@ -118,7 +128,7 @@
 		  "title": "Party City!",
 			"date": "2025-08-18",
 			"role": "Scripter / UI Design / Animator",
-			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses - as well as various in-game special events for a balance of quality of life for player engagement.",
+			"desc_markdown": "Developed for **Bricktropolis**, *Party City!* is a vibrant **minigame collection experience** inspired by the classic *Ripull Minigames*. Contributed as **Scripter, UI Designer, and animator**, building systems for **game selection, round management, character controls, and player interfaces**. Focused on delivering smooth transitions between activities, cohesive UI flow, and scalable scripting architecture for future expansion with additional minigames - from Bombhead and Tag to Bullrush and obstacle courses, as well as various in-game special events for a balance of quality of life for player engagement.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesMap.png"},
         {"type":"image","src":"assets/Past Work Assets/5) Minigames/MinigamesVoting.png"},
