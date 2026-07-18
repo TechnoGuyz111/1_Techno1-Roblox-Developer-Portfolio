@@ -5,13 +5,23 @@
   "tagline": "A Roblox Developer • Lua Scripter and a UI/UX Designer",
   "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
+  {
+	  	"title": "[COMMISSION] Stud-Style Lucky Wheel UI",
+			"date": "2026-08-18",
+			"role": "UI Designer",
+			"desc_markdown": "Contributed for an short design role, involving **brainrot-genre** UI designed in **Figma** for a Roblox experience in active development. Tasks include creating **buttons**, **reward segments**, additional **RNG info**, and a *premium-feel stud-style* background in Figma, retaining *maximum resolution* and *clearly defined hierarchical structure* on UI object properties when imported into **Roblox Studio**, in order to emphasize *scalable adaptability* across various devices, making the frame fully prepared for instant *integration* into a **full gameplay system** complete with **responsive animation** and *fluidity of use* for *increased* **retention** and **monetisation** of the experience.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/12) Stud-Style Lucky Wheel UI/Frame.png"}
+      ]
+    },
     {
 		  "title": "[COMMISSION] Football Match HUD UI",
 			"date": "2026-07-17",
 			"role": "UI Designer",
 			"desc_markdown": "Contributed to a short design role, involving making a **Figma** frame for an **in-game HUD** as part of a **Blue Lock inspired** UI. Tasks include uploading *image and text assets* at **maximum resolution** and retaining **scalable** and *clearly defined hierarchical* structure of vectors in Figma. Responsibilities extend to developing a full frame; specifically an in-game HUD UI, featuring usage of *timers, team colour labels, skill buttons, and a flow bar*; making the frame fully prepared for **responsive animation** and integration into a full game system to increase *experience retention during its core gameplay loop*.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/11) BlueLockUI/Frame-1.png"}      ]
+        {"type":"image","src":"assets/Past Work Assets/11) BlueLockUI/Frame-1.png"}
+      ]
     },
     {
 		  "title": "[COMMISSION] UI Figma-to-Roblox Imports",
@@ -19,7 +29,8 @@
 			"role": "UI Designer",
 			"desc_markdown": "Contributed for a small importing role, involving **converting** a **Figma** UI design into a **Roblox Studio** frame for a *Dev server* as part of a series of *trial tasks*. Tasks include uploading *image and text assets* at *maximum resolution and retaining scalable and clearly defined hierarchical UI objects in Roblox Studio*. Responsibilities extend to developing a full frame; specifically a **Battle Pass UI**, featuring usage of **tiers, levels, and premium benefits**; making the frame fully prepared for *responsive animation and integration into a full game system* to increase experience *retention* and **monetisation**.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/10) FigmaImport/Frame.jpg"}      ]
+        {"type":"image","src":"assets/Past Work Assets/10) FigmaImport/Frame.jpg"}
+      ]
     },
     {
 		  "title": "Meowlu's World",
@@ -27,7 +38,12 @@
 			"role": "Lead Scripter / UI Designer",
 			"desc_markdown": "Contributed for an ongoing programming role, involving backend scripting, UI integration, and gameplay refinements for a Roblox experience in active development. Tasks include programming custom mechanics and configuring DataStores for player progression in Roblox Studio. Responsibilities extend to developing full-stack gameplay systems; specifically an RNG Fishing minigame, a hitbox-based Mining system, and custom Inventory item stacking, alongside fully scripting interactive UIs, including the Inventory (FishDex/StoneDex), monetized Shop, Daily Login, Emotes, Settings, Help, Join Group, and Add Friends menus. Work is task-based, emphasizing modular scripting, speed, and adaptability across various complex system implementations.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/"}      ]
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 43.png"},
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 44.png"},
+        {"type":"image","src":"assets/Past Work Assets/9) Meowlu's World/Images/Frame 45.png"},
+        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid7.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/9) Meowlu's World/Videos/vid8.mp4"}
+      ]
     },  
     {
 		  "title": "[COMMISSION] Daily Rewards UI",
@@ -35,7 +51,8 @@
 			"role": "UI Designer",
 			"desc_markdown": "Contributed to a role in an upcoming ***Tycoon*** themed game, involving **Daily Rewards UI** design for a Roblox experience in beta development. Tasks included **designing UI** from scratch, in order to fit the necessary **cartoon** theme, as well as making use of the design software **Figma**. Responsibilities extend to **creating or modifying UI components** as needed for specified features, for consistency with the game's themed style.",
       "media":[
-        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}      ]
+        {"type":"image","src":"assets/Past Work Assets/8) Daily Rewards/DailyRewards(1).png"}
+      ]
     },   
     {
 		  "title": "Capture It!",
@@ -58,8 +75,8 @@
 			"role": "Lead Developer",
 			"desc_markdown": "Developing a passion project / personal game where players reach an unknown level by completing objectives, purchasing stairs and building a tower. Play the demo [here](https://www.roblox.com/games/125893875685195/EARLY-ACCESS-TOWER-TO).",
       "media":[
-        {"type":"video","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
-        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.mp4"},
+        {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerToIcon1.png"},
+        {"type":"video","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.mp4"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-ShopUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-GameUI.png"},
         {"type":"image","src":"assets/Past Work Assets/-1) TowerTo/TowerTo-CoinsUI.png"},
@@ -119,7 +136,7 @@
 			"desc_markdown": "Commissioned to design and implement a **crate opening system** for an RNG-style Roblox experience. Built to provide a simple and exciting player experience with data persistence and visual appeal, as well as including optional game passes for player enjoyment. **Crate opening UI** with smooth animations and visual effects, **Randomized reward system** supporting multiple rarity tiers, **Data saving integration** for player inventory and crate history, easily configurable for different crate types and reward pools; all delivered as a modular, reusable system emphasizing both **functionality** and **presentation quality**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemMap.png"},
-        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderboard.mp4"},
+        {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemLeaderBoard.mp4"},
 	      {"type":"image","src":"assets/Past Work Assets/4) Crate System/CrateSystemGamepass.png"},
         {"type":"video","src":"assets/Past Work Assets/4) Crate System/CrateSystemPurchase.mp4"}
       ]
