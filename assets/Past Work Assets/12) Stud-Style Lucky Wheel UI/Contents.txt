@@ -1,6 +1,6 @@
     {
 		"title": "[COMMISSION] Stud-Style Lucky Wheel UI",
-			"date": "2026-08-18",
+			"date": "2026-07-18",
 			"role": "UI Designer",
 			"desc_markdown": "Contributed for an short design role, involving **brainrot-genre** UI designed in **Figma** for a Roblox experience in active development. Tasks include creating **buttons**, **reward segments**, additional **RNG info**, and a *premium-feel stud-style* background in Figma, retaining *maximum resolution* and *clearly defined hierarchical structure* on UI object properties when imported into **Roblox Studio**, in order to emphasize *scalable adaptability* across various devices, making the frame fully prepared for instant *integration* into a **full gameplay system** complete with **responsive animation** and *fluidity of use* for *increased* **retention** and **monetisation** of the experience.",
       "media":[

@@ -3,9 +3,9 @@
   "initials": "a.k.a lys_techno",
   "avatar": "assets/images/avatar.jpg",
   "tagline": "A Roblox Developer • Lua Scripter and a UI/UX Designer",
-  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! (***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
+  "bio_markdown": "Hi — I'm **1_Techno1**, a Roblox developer with 5+ years of experience in scripting, UI/UX design, animation, and asset creation. I specialize in programming full game systems that are clean, functional, and optimized for player experience. I also specialize in designing sleek, graphic and responsive interfaces. I also possess a basic understanding of core principles in enhancing gameplay immersion using dynamic rig animations, cutscenes and 3D models in order to bring your project to life. Oh, and I *also* made this website! \n\n#### Other important information:\n- **Availability** - Mon-Fri/Sat, 20+ hours weekly.\n- **Timezone** - GMT+1, BST/British Summer Time.   \n\n(***Note:*** All media displayed has been watermarked using the open source **Watermarkly** platform.)",
   "work": [
-  {
+    {
 	  	"title": "[COMMISSION] Stud-Style Lucky Wheel UI",
 			"date": "2026-08-18",
 			"role": "UI Designer",
@@ -30,6 +30,17 @@
 			"desc_markdown": "Contributed for a small importing role, involving **converting** a **Figma** UI design into a **Roblox Studio** frame for a *Dev server* as part of a series of *trial tasks*. Tasks include uploading *image and text assets* at *maximum resolution and retaining scalable and clearly defined hierarchical UI objects in Roblox Studio*. Responsibilities extend to developing a full frame; specifically a **Battle Pass UI**, featuring usage of **tiers, levels, and premium benefits**; making the frame fully prepared for *responsive animation and integration into a full game system* to increase experience *retention* and **monetisation**.",
       "media":[
         {"type":"image","src":"assets/Past Work Assets/10) FigmaImport/Frame.jpg"}
+      ]
+    },
+    {
+		  "title": "[COMMISSION] Shop + Rebirth UI System",
+      "date": "2026-07-21",
+      "role": "Scripter / UI Designer",
+      "desc_markdown": "Contributed to a commission role with **Xperiment Studios** involving the creation and implementation of a **Rebirth UI system** for the game **Steal a Football Brainrot**. Play the game [here](https://www.roblox.com/games/121271816584401/Steal-a-Football-Brainrot). Tasks included designing a complete **Figma-based interface**, creating themed UI elements such as **buttons, panels, icons, and interactive frames**, while maintaining a structured hierarchy optimized for direct import into **Roblox Studio**. Responsibilities extended to developing **LocalScript-based UI interactions**, including smooth **hover animations, click feedback, frame transitions, and interface toggling**, ensuring the UI was prepared for integration into the game's future rebirth progression systems. The implementation focused on delivering a polished, responsive player experience with emphasis on **visual consistency, usability, and scalable expansion** for additional gameplay features.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Slide_1.webp"},
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Slide_4.webp"},
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Vouch.png"}
       ]
     },
     {

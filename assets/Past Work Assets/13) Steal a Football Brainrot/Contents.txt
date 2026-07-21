@@ -1,0 +1,11 @@
+{
+		  "title": "[COMMISSION] Shop + Rebirth UI System",
+      "date": "2026-07-21",
+      "role": "Scripter / UI Designer",
+      "desc_markdown": "Contributed to a commission role with **Xperiment Studios** involving the creation and implementation of a **Rebirth UI system** for the game **Steal a Football Brainrot**. Play the game [here](https://www.roblox.com/games/121271816584401/Steal-a-Football-Brainrot). Tasks included designing a complete **Figma-based interface**, creating themed UI elements such as **buttons, panels, icons, and interactive frames**, while maintaining a structured hierarchy optimized for direct import into **Roblox Studio**. Responsibilities extended to developing **LocalScript-based UI interactions**, including smooth **hover animations, click feedback, frame transitions, and interface toggling**, ensuring the UI was prepared for integration into the game's future rebirth progression systems. The implementation focused on delivering a polished, responsive player experience with emphasis on **visual consistency, usability, and scalable expansion** for additional gameplay features.",
+      "media":[
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Slide_1.webp"},
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Slide_4.webp"},
+        {"type":"image","src":"assets/Past Work Assets/13) Steal a Football Brainrot/Vouch.png"}
+      ]
+    },
